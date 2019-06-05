@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <link href="{{"css/ui-guide.css" | absURL}}" rel="stylesheet">
+    <body>
+        {{- partial "header.html" . -}}
+
+        <section class="style-guide-section">
+            <div class="page-header">
+                <div class="container">
+                    <h1>UI Style Guide</h1>            
+                </div>
+            </div>
+            <div class="ui-styles">
+                <div class="container">
+                    <h2 class="section-title"><small>01</small>Typography</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="para-text mt-3 mb-3">
+                                <h1>H1 - The quick brown fox jumps over the lazy dog</h1>
+                                <h2>H2 - The quick brown fox jumps over the lazy dog</h2>
+                                <h3>H3 - The quick brown fox jumps over the lazy dog</h3>
+                                <h4>H4 - The quick brown fox jumps over the lazy dog</h4>
+                                <h5>H5 - The quick brown fox jumps over the lazy dog</h5>
+                                <h6>H6 - The quick brown fox jumps over the lazy dog</h6>
+                            </div>
+                            <div class="body-text mt-5 mb-3">
+                                <p>Body text - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed urna sed neque blandit gravida vitae bibendum dictum, nisl nisi.</p>
+                                <br>
+                                <br>
+                                <a href="JavaScript:Void(0);" target="_self">Hyperlink</a>
+                                <br>
+                                <br>
+                                <ul>
+                                    <li>Unordered List</li>
+                                    <li>Unordered List</li>
+                                    <li>Unordered List</li>
+                                </ul>
+                                <ol>
+                                    <li>Ordered List</li>
+                                    <li>Ordered List</li>
+                                    <li>Ordered List</li>
+                                </ol>
+                                <br>
+                                <br>
+                                <blockquote>Blockquote - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed urna sed neque blandit gravida vitae bibendum dictum</blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
+
+

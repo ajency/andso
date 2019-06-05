@@ -1,0 +1,14 @@
+.style-guide-section {
+    .page-header {
+        padding: 2.5rem 0;
+    }
+    .section-title {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        small {
+            font-size: 60%;
+            color: grey;
+            margin-right: 8px;            
+        }
+    }
+}

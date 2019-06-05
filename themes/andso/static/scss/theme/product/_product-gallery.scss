@@ -1,0 +1,22 @@
+.product {
+    &-image {
+        padding: 0;
+        list-style: none;
+        margin-left: -5px;
+        margin-right: -5px;
+        clear: both;
+        overflow: hidden;
+
+        li {
+            width: 50%;
+            float: left;
+            padding: 0 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:nth-child(3){
+                width: 100%;
+            }
+        }
+    }
+}

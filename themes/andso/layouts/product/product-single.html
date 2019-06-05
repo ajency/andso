@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "header.html" . -}}
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <div class="product-gallery">
+                        <ul class="product-image">
+                            <li><img src="{{"img/pg-potrait_1.jpg" | absURL}}" alt class="img-fluid"></li>
+                            <li><img src="{{"img/pg-potrait_2.jpg" | absURL}}" alt class="img-fluid"></li>
+                            <li><img src="{{"img/pg-landscape_3.jpg" | absURL}}" alt class="img-fluid"></li>
+                            <li><img src="{{"img/pg-potrait_4.jpg" | absURL}}" alt class="img-fluid"></li>
+                            <li><img src="{{"img/pg-potrait_5.jpg" | absURL}}" alt class="img-fluid"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="product-description">
+                        <h1 class="product-title">Wavye Console</h1>
+                        <p class="price">
+                            <span class="Price-amount amount">
+                                <span class="Price-currencySymbol">₹</span>
+                                90,000.00
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{- partial "footer.html" . -}}
+    </body>
+</html>        
