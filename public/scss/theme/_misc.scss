@@ -1,0 +1,9 @@
+body {
+    font-family: $roboto;
+}
+.container-fluid {
+    @media(min-width: 1200px){
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}

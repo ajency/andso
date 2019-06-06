@@ -1,0 +1,12 @@
+.product {
+    &-title {
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+    &-description {
+        .price {
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+    }
+}
