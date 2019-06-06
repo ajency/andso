@@ -1,0 +1,34 @@
+.quantity {
+    padding: 0 0 20px;
+    &-box {
+        max-width: 125px;
+        display: flex;
+        border: 1px solid theme-color('grey');
+    }
+    .qty-btn {
+        background: transparent;
+        border: 0; 
+        width: 25%;   
+        outline: 0;    
+    }
+    .custom-qty {
+        width: 50%;
+        border: 1px solid theme-color('grey');
+        border-top: 0;
+        border-bottom: 0;
+        outline: 0;
+        padding: 2px 0;
+        text-align: center;
+        font-weight: 400;
+    }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0; 
+    }
+}
+
+.add_to_cart_button {
+    width: 100%;
+    text-transform: uppercase;
+}
