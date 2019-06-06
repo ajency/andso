@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://ajency.github.io/andso/public/"
 languageCode = "en-us"
 title = "AND SO Store"
 theme = "andso"

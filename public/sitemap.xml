@@ -3,40 +3,40 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://ajency.github.io/andso/public/</loc>
     <lastmod>2019-05-31T10:45:49+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/product/product-single/</loc>
+    <loc>https://ajency.github.io/andso/public/product/product-single/</loc>
     <lastmod>2019-05-31T10:45:49+05:30</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/product/</loc>
-    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.org/ui-style-guide/ui-style-guide/</loc>
-    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://example.org/ui-style-guide/</loc>
+    <loc>https://ajency.github.io/andso/public/product/</loc>
     <lastmod>2019-05-31T10:45:49+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://ajency.github.io/andso/public/ui-style-guide/ui-style-guide/</loc>
+    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/andso/public/ui-style-guide/</loc>
+    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://ajency.github.io/andso/public/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/andso/public/tags/</loc>
     <priority>0</priority>
   </url>
   

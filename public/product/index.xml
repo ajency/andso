@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Products on AND SO Store</title>
-    <link>http://example.org/product/</link>
+    <link>https://ajency.github.io/andso/public/product/</link>
     <description>Recent content in Products on AND SO Store</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 May 2019 10:45:49 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/product/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/andso/public/product/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Product Single</title>
-      <link>http://example.org/product/product-single/</link>
+      <link>https://ajency.github.io/andso/public/product/product-single/</link>
       <pubDate>Fri, 31 May 2019 10:45:49 +0530</pubDate>
       
-      <guid>http://example.org/product/product-single/</guid>
+      <guid>https://ajency.github.io/andso/public/product/product-single/</guid>
       <description></description>
     </item>
     

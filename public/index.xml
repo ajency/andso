@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AND SO Store</title>
-    <link>http://example.org/</link>
+    <link>https://ajency.github.io/andso/public/</link>
     <description>Recent content on AND SO Store</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 May 2019 10:45:49 +0530</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ajency.github.io/andso/public/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Product Single</title>
-      <link>http://example.org/product/product-single/</link>
+      <link>https://ajency.github.io/andso/public/product/product-single/</link>
       <pubDate>Fri, 31 May 2019 10:45:49 +0530</pubDate>
       
-      <guid>http://example.org/product/product-single/</guid>
+      <guid>https://ajency.github.io/andso/public/product/product-single/</guid>
       <description></description>
     </item>
     
     <item>
       <title>UI Style Guide</title>
-      <link>http://example.org/ui-style-guide/ui-style-guide/</link>
+      <link>https://ajency.github.io/andso/public/ui-style-guide/ui-style-guide/</link>
       <pubDate>Fri, 31 May 2019 10:45:49 +0530</pubDate>
       
-      <guid>http://example.org/ui-style-guide/ui-style-guide/</guid>
+      <guid>https://ajency.github.io/andso/public/ui-style-guide/ui-style-guide/</guid>
       <description></description>
     </item>
     
