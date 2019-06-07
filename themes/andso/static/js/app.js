@@ -5,6 +5,15 @@ $(document).ready(function(){
         $(this).toggleClass('on');
         $('#header-menu').toggleClass('active');
     });
+
+    if($('.sticky-sidebar').length){
+        var sticky_offset = $('#header .header-navbar').height() + 10;
+        $('.sticky-sidebar').theiaStickySidebar({
+            // Settings
+            additionalMarginTop: sticky_offset,
+        });
+    }
+
 });
 
 $(window).scroll(function(){

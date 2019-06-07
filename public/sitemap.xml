@@ -9,6 +9,17 @@
   </url>
   
   <url>
+    <loc>https://ajency.github.io/andso/public/header/header1/</loc>
+    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ajency.github.io/andso/public/header/</loc>
+    <lastmod>2019-05-31T10:45:49+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://ajency.github.io/andso/public/product/product-single/</loc>
     <lastmod>2019-05-31T10:45:49+05:30</lastmod>
   </url>

@@ -1,0 +1,22 @@
+{
+  "name": "local-minifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajency/andso.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajency/andso/issues"
+  },
+  "homepage": "https://github.com/ajency/andso#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

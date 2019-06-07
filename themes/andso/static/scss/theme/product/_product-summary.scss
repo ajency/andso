@@ -3,10 +3,13 @@
         text-transform: uppercase;
         margin-bottom: .5rem;
     }
-    &-description {
+    &-summary {
         .price {
             font-size: 1.5rem;
             font-weight: 400;
+        }
+        @include for-min-desktop {
+            padding-left: 2vw;
         }
     }
 }

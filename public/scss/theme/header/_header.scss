@@ -19,7 +19,7 @@ body {
     
     &-topbar {
         padding: 3px 0;
-        background: #f5f5f5;
+        background: theme-color('neworleans');
     }
     &-logo {
         .navbar-brand {      
@@ -34,7 +34,7 @@ body {
             }
         }
         @include for-min-tablet {
-            padding-right: 3%;
+            padding-right: 2%;
         }
     }
     .contact-info,
@@ -69,21 +69,9 @@ body {
             }
         }      
     }
-    .show-on-sticky {
-        @include for-min-tablet {
-            display: none;
-        }
-        @include for-max-tablet {
-            display: flex;
-            align-items: center;
-        }
-    }
     &-sticky {
         @include for-min-tablet {
             transform: translateY(-36px);
-            .show-on-sticky {
-                display: block;
-            }
         }
     }
     &-navbar {
@@ -95,6 +83,12 @@ body {
         }
     }
     .menu {
+        a {
+            &:hover,
+            &:focus {
+                color: theme-color('primary');
+            }            
+        }
         > .menu-item {
             > a {
                 text-transform: uppercase;
@@ -137,17 +131,50 @@ body {
         } 
         @include for-min-desktop {
             > .menu-item {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
             }
+        }  
+        .current-menu-item {
+            > a {
+                color: theme-color('primary');
+            }
+        }    
+    } 
+    .highlight-menu-item {
+        &.item-pink {
+            > a {
+                position: relative;
+                &:after {
+                    content: "";                
+                    display: block;
+                    height: 22px;
+                    width: 100%;
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    background-position: 50% 10%;
+                    background-image: url(../img/stroke-hitpink.png);
+                }
+            }            
         }
-        @include for-min-large-desktop {
-            > .menu-item {
-                padding-left: 1.5rem;
-                padding-right: 1.5rem;
-            }
-        }       
-    }    
+        &.item-lightblue {
+            > a {
+                position: relative;
+                &:after {
+                    content: "";                
+                    display: block;
+                    height: 22px;
+                    width: 100%;
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    background-position: 50% 10%;
+                    background-image: url(../img/stroke-lightblue.png);
+                }
+            }             
+        }
+    }   
 }
 
 .mega-menu {
