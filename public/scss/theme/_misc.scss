@@ -2,8 +2,8 @@ body {
     font-family: $roboto;
 }
 .container-fluid {
-    @include for-min-large-desktop {
+    @include media-min(xlg) {
         padding-left: 6rem;
         padding-right: 6rem;
     }
-}
+} 

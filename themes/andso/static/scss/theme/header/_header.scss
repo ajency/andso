@@ -90,8 +90,12 @@ body {
             }            
         }
         > .menu-item {
+            &:first-child {
+                padding-left: 0;
+            }
             > a {
                 text-transform: uppercase;
+                font-weight: 600;
             }
         }
         .mega-menu {
@@ -111,7 +115,7 @@ body {
     
             > .menu-item {
                 float: left; 
-                padding: 1.375rem 0.8rem;
+                padding: 1.375rem 0.65rem;
             }            
             .mega-menu {
                 position: absolute;
@@ -130,8 +134,8 @@ body {
         } 
         @include media-min(lg) {
             > .menu-item {
-                padding-left: 2rem;
-                padding-right: 2rem;
+                padding-left: 1.3rem;
+                padding-right: 1.3rem;
             }
         }  
         .current-menu-item {
@@ -178,8 +182,9 @@ body {
 
 .mega-menu {
     @include media-min(md) {        
-        background: rgba(243, 214, 148, 0.3);
-        background: rgba(115, 166, 200, 0.05);
+        background: rgba(243, 214, 148, .05);
+        box-shadow: 0 1px 5px rgba(0,0,0,.05);
+
         .menu-container {
             width: 80%;
             margin: 0 auto;
@@ -194,17 +199,34 @@ body {
                 display: flex;
 
                 > li {
-                    flex: 1 0 25%;
-                    padding: 20px 0 20px 15px !important;
+                    //flex: 1 0 25%;
+                    width: 25%;
+                    padding: 20px 15px !important;
 
                     > a {
                         font-weight: 700;
-                        padding: 0 0 10px; 
+                        padding: 0 0 18px;
+                        position: relative;
+                        &::after {
+                            content: "";
+                            display: block;
+                            width: 90%;
+                            height: 2px;
+                            background: theme-color('primary');
+                            position: absolute;
+                            bottom: 12px;
+                        }
                     }
                     > ul {
                         li {                            
-                            padding: 0 0 10px;                           
-                        }
+                            padding: 0 0 3px;
+                            ul {
+                                padding-left: 23px;
+                                list-style: circle;
+                                text-indent: 0;
+                                padding-top: 2px;
+                            }
+                        }                        
                     }
                     ul {
                         a {
