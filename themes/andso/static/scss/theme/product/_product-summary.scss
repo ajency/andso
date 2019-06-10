@@ -8,7 +8,7 @@
             font-size: 1.5rem;
             font-weight: 400;
         }
-        @include for-min-desktop {
+        @include media-min(lg) {
             padding-left: 2vw;
         }
     }
