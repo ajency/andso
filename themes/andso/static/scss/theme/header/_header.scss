@@ -185,6 +185,18 @@ body {
         background: rgba(243, 214, 148, .05);
         box-shadow: 0 1px 5px rgba(0,0,0,.05);
 
+        &:after {
+            content: "";
+            background: #fff;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
         .menu-container {
             width: 80%;
             margin: 0 auto;
