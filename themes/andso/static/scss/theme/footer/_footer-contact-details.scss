@@ -3,17 +3,18 @@
 	border-bottom: 2px solid #464646;
 	.info-block{
 		border-right: 1px solid #464646;
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 		@media (max-width: 991px){
 			border-right: none;
 		}
 	}
 	.request-block{
+		padding: 1rem 0;
 		.catalog-request{
 		    font-size: 18px;
 		    text-transform: capitalize;
 		    font-weight: 900;
-		    margin-bottom: 2rem;
+		    margin-bottom: 1rem;
 		    a{
 		    	color: white;
 		    }
@@ -37,6 +38,7 @@
 	}
 	.ft-text{
 		font-size: 1rem;
+		margin-bottom: 2px;
 		a{
 			color: $linen;
 			&:hover{
