@@ -1,0 +1,18 @@
+.footer_nav_links{
+	margin-bottom: 2rem;
+	text-align: center;
+	a{
+		color: $linen;
+		padding: 0 1rem;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+.site-info{
+	text-align: center;
+	.copyright{
+		color: $linen;
+		padding: 0 0 1rem;
+	}
+}

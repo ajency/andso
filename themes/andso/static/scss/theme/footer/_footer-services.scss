@@ -1,0 +1,22 @@
+.footer{
+    background: theme-color('dark');
+}
+.footer_services{
+	margin-bottom: 2rem;
+	border-bottom: 2px solid #464646;
+	.footer-link{
+		color: white;
+			i{
+				font-size: 20px;
+			}
+			span{
+				padding: 0 0.5rem;
+			}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	@media (max-width: 991px){
+		text-align: center;
+	}
+}    

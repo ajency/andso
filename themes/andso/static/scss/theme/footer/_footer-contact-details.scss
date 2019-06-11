@@ -1,0 +1,78 @@
+.contact-block{
+	margin-bottom: 2rem;
+	border-bottom: 2px solid #464646;
+	.info-block{
+		border-right: 1px solid #464646;
+		margin-bottom: 1rem;
+		@media (max-width: 991px){
+			border-right: none;
+		}
+	}
+	.request-block{
+		padding: 1rem 0;
+		.catalog-request{
+		    font-size: 18px;
+		    text-transform: capitalize;
+		    font-weight: 900;
+		    margin-bottom: 1rem;
+		    a{
+		    	color: white;
+		    }
+		}
+		@media (max-width: 991px){
+			text-align: center;
+		}
+	}
+	.seperator{
+	    border-top: 1px solid #464646;
+    	width: 100%;
+    	@media (max-width: 991px){
+    		width: 50%;
+    	}
+	}
+	.contact-block-title{
+		color: $tanhide;
+		font-weight: 900;
+		text-transform: uppercase;
+	    font-size: 20px;
+	}
+	.ft-text{
+		font-size: 1rem;
+		margin-bottom: 2px;
+		a{
+			color: $linen;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.social-info{
+		a{
+		color: $linen;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		.fa-facebook-f{
+			color: #3b5998;
+			padding: 0 0.2rem;
+		}
+		.fa-instagram{
+			color: #e95950;
+			padding: 0 0.2rem;
+		}
+		.fa-pinterest-p{
+			color: #bd081c;
+			padding: 0 0.2rem;
+		}
+		@media (max-width: 991px){
+			text-align: center;
+		}
+	}
+	.customer_care{
+		color: $linen;
+		@media (max-width: 991px){
+			text-align: center;
+		}
+	}
+}

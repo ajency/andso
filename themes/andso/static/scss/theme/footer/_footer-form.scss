@@ -1,0 +1,53 @@
+
+.form-block{
+    align-self: center;
+	.footer_form{
+	    margin-bottom: 1rem;
+		.ft-text{
+			color: $linen;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1rem;
+		}
+		input[type=email]{
+			border: none;
+		    border-radius: 50px;
+		    width: 100%;
+		    text-align: center;
+		    background: #bebebe;
+		    padding: 0.5rem;
+	        margin: 1.5rem 0;
+		    &:active, &:focus{
+		    	outline: none;
+		    }
+		    @media (max-width: 991px){
+		    	width: 60%;
+		    	text-align: center;
+		    }
+		}
+		.suscribe-btn{
+			text-align: center;
+			.submit{
+			    font-size: 12px;
+			    text-transform: uppercase;
+			    font-weight: 900;
+			    padding: 10px 20px;
+		    	border-radius: 5px;
+		        background: transparent;
+	    		color: #fff;
+			    margin-bottom: 12px;
+		        border: 1px solid;
+		        transition: .3s cubic-bezier(0.4, 0, 1, 1);
+			    &:hover{
+			    	background: theme-color('primary');
+	    			color: #333;
+	    			border: none;
+			    }
+			    &:active, &:focus{
+		    		outline: none;
+		    	}
+
+			}
+		}
+	}
+}
