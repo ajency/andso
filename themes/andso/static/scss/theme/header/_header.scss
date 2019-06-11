@@ -138,11 +138,11 @@ body {
                 padding-right: 1.3rem;
             }
         }  
-        .current-menu-item {
-            > a {
-                color: theme-color('primary');
-            }
-        }    
+        // .current-menu-item {
+        //     > a {
+        //         color: theme-color('primary');
+        //     }
+        // }    
     } 
     .highlight-menu-item {
         &.item-pink {
