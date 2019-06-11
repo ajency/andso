@@ -90,7 +90,6 @@ body {
             }            
         }
         > .menu-item {
-                        
             > a {
                 text-transform: uppercase;
                 font-weight: 500;
@@ -138,6 +137,11 @@ body {
                 }
             }
         } 
+        @include media-max(md) {
+            > .menu-item {
+                margin-bottom: 10px;
+            }
+        }
         @include media-min(lg) {
             > .menu-item {
                 padding-left: 1.3rem;
@@ -240,6 +244,7 @@ body {
                         font-weight: 700;
                         padding: 0 0 18px;
                         position: relative;
+                        color: #fff;
                         &:after {
                             content: "";
                             display: block;
@@ -282,6 +287,7 @@ body {
                     > a {
                         padding: 0 0 18px;
                         position: relative;
+                        color: #333;
                         &:after {
                             content: "";
                             display: block;
@@ -433,5 +439,36 @@ body {
         text-align: center;
         padding: 2px;
         font-size: 12px;
+    }
+}
+
+.mobile-navlinks {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {
+            padding-right: 20px;
+            a {
+                color: #000;
+            }
+            .nav-icon {
+                font-size: 24px;
+            }
+            .header-cart {
+                padding-right: 22px;
+                position: relative;
+                .cart-count {
+                    position: absolute;
+                    background: #333;
+                    color: #fff;
+                    right: 0;
+                    min-width: 18px;
+                    min-height: 18px;
+                    font-size: 10px;
+                }
+            }
+        }
     }
 }
