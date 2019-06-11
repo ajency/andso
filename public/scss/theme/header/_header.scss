@@ -178,6 +178,19 @@ body {
             }             
         }
     }   
+    &__style1 {
+        .mega-menu {
+            background: #333;
+            ul {
+                color: #fff; 
+                li {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .mega-menu {
