@@ -1,8 +1,7 @@
 .contact-block{
 	margin-bottom: 2rem;
-	border-bottom: 2px solid #464646;
 	.info-block{
-		border-right: 1px solid #464646;
+		border-right: 1px solid #646464;
 		margin-bottom: 1rem;
 		@media (max-width: 991px){
 			border-right: none;
@@ -10,21 +9,18 @@
 	}
 	.request-block{
 		padding: 1rem 0;
-		.catalog-request{
-		    font-size: 18px;
-		    text-transform: capitalize;
-		    font-weight: 600;
-		    margin-bottom: 1rem;
-		    a{
-		    	color: white;
-		    }
-		}
-		@media (max-width: 991px){
-			text-align: center;
+		.request-btn {
+			font-size: .75rem;
+			background: theme-color('neworleans');
+			border-radius: 0;
+			box-shadow: none;
+			color: #333;
+			text-transform: uppercase;
+			letter-spacing: 1px;
 		}
 	}
 	.seperator{
-	    border-top: 1px solid #464646;
+	    border-top: 1px solid #646464;
     	width: 100%;
     	@media (max-width: 991px){
     		width: 50%;
@@ -46,20 +42,15 @@
 			}
 		}
 	}
-	.customer_care{
-		color: $linen;
-		@media (max-width: 991px){
-			text-align: center;
-		}
-	}
 }
 
 .social-links {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	max-width: 70%;
 
 	.social-link {
 		margin-right: 12px;
@@ -71,25 +62,47 @@
 			border-radius: 56%;
 			display: block;
 			text-align: center;
-			font-size: 20px;
-			color: #fff;
+			font-size: 20px;			
 			padding-top: 4px;
-			display: block;			
+			display: block;		
+			transition: all 0.6s ease;
 		}
 		&.fb {
-			a {
-				background: #3b5998;
+			a {				
+				color: #fff;
+				background: #3b5998;					
+
 			}
 		}
 		&.insta {
 			a {
-				background: #e95950;
+				color: #fff;
+				background: #e95950;					
 			}
 		}
 		&.pinterest {
-			a {
-				background: #bd081c;
+			a {				
+				color: #fff;
+				background: #bd081c;				
 			}
 		}
-	}		
+	}	
+	@include media-max(md){
+		margin: 0 auto;
+		max-width: 50%;
+	}	
+}
+
+.customer-care {
+	.cc-info-box {
+		margin-bottom: 1.875rem;
+		p {
+			margin-bottom: 0;
+			font-size: .75rem;
+			color: $linen;
+		}
+	}
+	@include media-max(md){
+		text-align: center;
+	}
 }

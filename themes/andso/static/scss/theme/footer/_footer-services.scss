@@ -6,12 +6,13 @@
 	border-bottom: 2px solid #464646;
 	.footer-link{
 		color: white;
-			i{
-				font-size: 20px;
-			}
-			span{
-				padding: 0 0.5rem;
-			}
+		font-size: 0.875rem;
+		i{
+			font-size: 20px;
+		}
+		span{
+			padding: 0 0.5rem;
+		}
 		&:hover{
 			text-decoration: none;
 		}
