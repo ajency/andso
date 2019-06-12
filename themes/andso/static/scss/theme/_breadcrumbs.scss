@@ -1,0 +1,29 @@
+.breadcrumb {
+    border-radius: 0;
+    padding: 1.3rem 0;
+    margin-bottom: 0;
+    background: transparent;
+    li {
+        padding-right: 8px;
+
+        a {
+            color: theme-color('dovegray');
+            text-decoration: none;
+            font-size: 0.75rem;
+        }
+        &:after {
+            content: "/";
+            padding-left: 8px;
+            vertical-align: middle;
+        }
+        &:last-child {
+            padding-right: 0;
+            a {
+                color: theme-color('primary');
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

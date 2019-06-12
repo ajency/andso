@@ -14,15 +14,21 @@ $(document).ready(function(){
         });
     }
 
-    $(document).on('click', '.minus-btn', function(){
-        var qty = $('.qty').val();
-        if(qty != 1){
-            $('.qty').val();
-        }        
-    });
-    $(document).on('click', '.plus-btn', function(){
-
-    });
+    // $(document).on('click', '.minus-btn', function(e){
+    //     e.preventDefault();
+    //     var qty = $('.qty').val();
+    //     if(qty != 1){
+    //         nqty = parseInt(qty) + 1;
+    //         $('.qty').val(nqty);
+    //     }        
+    // });
+    // $(document).on('click', '.plus-btn', function(e){
+    //     e.preventDefault();
+    //     var qty = $('.qty').val();
+    //     if(qty != 1){
+    //         $('.qty').val();
+    //     }
+    // });
 
 });
 
