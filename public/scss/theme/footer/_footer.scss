@@ -4,6 +4,8 @@
     letter-spacing: 1px;
     font-size: .75rem;
     font-weight: 500;
+    margin-bottom: 0.625rem;
+
     @include media-max(md){
         text-align: center;
     }
@@ -11,4 +13,23 @@
 
 .footer-seperator {
     border-color: #646464;
+}
+
+.footer {
+    > .container-fluid {
+        width: 90%;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+            a {
+                color: #fff;
+                font-size: .725rem;
+            }
+        }
+        @include media-max(md){
+            text-align: center;
+        }
+    }
 }

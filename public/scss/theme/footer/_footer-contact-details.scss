@@ -1,5 +1,5 @@
 .contact-block{
-	margin-bottom: 2rem;
+	margin-bottom: 1.25rem;
 	.info-block{
 		border-right: 1px solid #646464;
 		margin-bottom: 1rem;
@@ -8,15 +8,14 @@
 		}
 	}
 	.request-block{
-		padding: 1rem 0;
+		padding: 0.5rem 0;
 		.request-btn {
-			font-size: .75rem;
-			background: theme-color('neworleans');
-			border-radius: 0;
-			box-shadow: none;
-			color: #333;
+			font-size: 1.125rem;
+			font-weight: 700;
+			color: #fff;
 			text-transform: uppercase;
 			letter-spacing: 1px;
+			text-decoration: none;
 		}
 	}
 	.seperator{
@@ -95,7 +94,7 @@
 
 .customer-care {
 	.cc-info-box {
-		margin-bottom: 1.875rem;
+		margin-bottom: 1.25rem;
 		p {
 			margin-bottom: 0;
 			font-size: .75rem;

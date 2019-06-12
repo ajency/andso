@@ -51,15 +51,18 @@
 // }
 
 .footer_form {
-	max-width: 80%;	
+	margin-bottom: 1.875rem;
+
+	form {
+		max-width: 80%;
+	}	
 	.ft-text {
 		color: #fff;
 	}
 	input[type="text"]{
 		border-radius: 0;
 		background: transparent;
-		border: 0;
-		border-bottom: 1px solid theme-color('neworleans');
+		border: 1px solid theme-color('neworleans');
 		outline: 0;
 		box-shadow: none;
 		color: #fff;
@@ -97,10 +100,14 @@
 		}
 	}
 	@include media-max(md) {
-		margin: 0 auto;
-		max-width: 50%;
+		form {
+			margin: 0 auto;
+			max-width: 50%;
+		}
 	}
 	@include media-max(sm) {		
-		max-width: 90%;
+		form {
+			max-width: 90%;
+		}
 	}
 }
