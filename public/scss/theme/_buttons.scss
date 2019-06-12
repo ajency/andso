@@ -1,13 +1,13 @@
 .btn-primary {
     background: theme-color('primary');
-    color: #fff;
+    color: #333;
     opacity: .9;
     border-radius: 3px;
     padding: .6rem .75rem;
     
     &:hover,
     &:focus {
-        color: #fff;
+        color: #333;
         opacity: 1;
     }
 }

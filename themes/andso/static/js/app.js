@@ -14,6 +14,16 @@ $(document).ready(function(){
         });
     }
 
+    $(document).on('click', '.minus-btn', function(){
+        var qty = $('.qty').val();
+        if(qty != 1){
+            $('.qty').val();
+        }        
+    });
+    $(document).on('click', '.plus-btn', function(){
+
+    });
+
 });
 
 $(window).scroll(function(){
