@@ -16,20 +16,34 @@
 }
 
 .footer {
+    position: relative;
     > .container-fluid {
         width: 90%;
     }
     ul {
         list-style: none;
-        padding-left: 0;
+        padding: 0;
         li {
             a {
                 color: #fff;
                 font-size: .725rem;
+                text-decoration: none;
             }
         }
         @include media-max(md){
             text-align: center;
         }
     }
+    .footer-sticky-bg {
+        position: absolute;
+        bottom: 0;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+        left: 0;
+        opacity: 0.05;
+        max-width: 400px;
+        pointer-events: none;
+    }
 }
+

@@ -1,15 +1,30 @@
 .footer_nav_links{
 	margin-bottom: 2rem;
 	text-align: center;
-	span {
-		color:#646464;
-	}
-	a{
-		color: $linen;
-		padding: 0 1rem;
-		font-size: .75rem;
-		&:hover{
-			text-decoration: none;
+	ul {
+		li {			
+			margin: 3px 0;
+			&:last-child {
+				border-right: 0;
+			}
+			a{
+				color: $linen;
+				padding: 0 1rem;
+				font-size: .75rem;
+				padding: 0 1.2rem;
+
+				&:hover{
+					text-decoration: none;
+				}
+			}		
+		}
+		@media(min-width: 480px){
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			li {
+				border-right: 1px solid #646464;
+			}
 		}
 	}
 }

@@ -12,6 +12,8 @@
             padding-top: 0.625rem;
             padding-bottom: 0.625rem;
             font-weight: 600;
+            font-size: .875rem;
+            text-transform: uppercase;
             position: relative;
 
             &:hover,
@@ -36,7 +38,7 @@
         }
     }
     &-body {
-        font-size: 1rem;
+        font-size: .875rem;
         padding-bottom: 1rem;
     }
 }

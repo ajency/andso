@@ -1,5 +1,6 @@
 body {
     font-family: $roboto;
+    letter-spacing: 0.5px;
 }
 .container-fluid {
     @include media-min(xlg) {
@@ -7,3 +8,7 @@ body {
         padding-right: 6rem;
     }
 } 
+
+#content {
+    min-height: 50vh;
+}
