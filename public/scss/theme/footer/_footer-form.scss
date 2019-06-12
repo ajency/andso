@@ -100,4 +100,7 @@
 		margin: 0 auto;
 		max-width: 50%;
 	}
+	@include media-max(sm) {		
+		max-width: 90%;
+	}
 }
