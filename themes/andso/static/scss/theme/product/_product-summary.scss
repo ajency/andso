@@ -13,5 +13,8 @@
             padding-left: 2.5vw;
             padding-right: 2.5vw;
         }
+        @include media-max(md) {
+            padding-top: 0.9375rem;
+        }
     }
 }
