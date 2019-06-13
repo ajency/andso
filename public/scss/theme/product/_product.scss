@@ -1,5 +1,11 @@
 .product-single {
     .page-container {
-        padding-top: 3rem;
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
+    .sp-col-left {
+        @include media-between(md,lg){
+            padding-right: 2.5vw;
+        }
     }
 }

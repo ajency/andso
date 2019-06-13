@@ -11,7 +11,10 @@
 <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 <link rel="shortcut icon" href="https://ajency.github.io/andso/public/img/favicon.png" type="image/x-icon" />
-<link href="https://ajency.github.io/andso/public/css/app.css" rel="stylesheet"><body class="product-single"><header class="header header__style1" id="header">
+<link href="https://ajency.github.io/andso/public/css/app.css" rel="stylesheet"><link href="https://ajency.github.io/andso/public/css/vendor/magnific-popup.css" rel="stylesheet">
+    <link href="https://ajency.github.io/andso/public/css/vendor/photoswipe.css" rel="stylesheet">
+    <link href="https://ajency.github.io/andso/public/css/vendor/default-skin/default-skin.css" rel="stylesheet">
+    <body class="product-single"><header class="header header__style1" id="header">
     <div class="header-topbar d-none d-lg-block">
         <div class="container-fluid d-flex justify-content-between">
             <ul class="contact-info d-flex">
@@ -331,20 +334,38 @@
           <div class="container-fluid">
               <div class="row">
                   <div class="col-xs-12 col-md-8 sp-col-left">
-                      <div class="product-gallery">
-                          <ul class="product-image">
-                              <li><img src="https://ajency.github.io/andso/public/img/pg-potrait_1.jpg" alt class="img-fluid"></li>
-                              <li><img src="https://ajency.github.io/andso/public/img/pg-potrait_2.jpg" alt class="img-fluid"></li>
-                              <li><img src="https://ajency.github.io/andso/public/img/pg-landscape_3.jpg" alt class="img-fluid"></li>
-                              <li><img src="https://ajency.github.io/andso/public/img/pg-potrait_4.jpg" alt class="img-fluid"></li>
-                              <li><img src="https://ajency.github.io/andso/public/img/pg-potrait_5.jpg" alt class="img-fluid"></li>
-                          </ul>
+                      <div id="gallery" class="product-image gallery clearfix" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
+                          <a href="https://ajency.github.io/andso/public/img/pg-potrait_1.jpg" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <img src="https://ajency.github.io/andso/public/img/pg-potrait_1.jpg" itemprop="thumbnail" alt="Image description">
+                          </a>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
+                          <a href="https://ajency.github.io/andso/public/img/pg-potrait_2.jpg" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <img src="https://ajency.github.io/andso/public/img/pg-potrait_2.jpg" itemprop="thumbnail" alt="Image description">
+                          </a>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
+                          <a href="https://ajency.github.io/andso/public/img/pg-landscape_3.jpg" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <img src="https://ajency.github.io/andso/public/img/pg-landscape_3.jpg" itemprop="thumbnail" alt="Image description">
+                          </a>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
+                          <a href="https://ajency.github.io/andso/public/img/pg-potrait_4.jpg" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <img src="https://ajency.github.io/andso/public/img/pg-potrait_4.jpg" itemprop="thumbnail" alt="Image description">
+                          </a>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
+                          <a href="https://ajency.github.io/andso/public/img/pg-potrait_5.jpg" data-width="1200" data-height="900" itemprop="contentUrl">
+                            <img src="https://ajency.github.io/andso/public/img/pg-potrait_5.jpg" itemprop="thumbnail" alt="Image description">
+                          </a>
+                        </figure>
                       </div>
                   </div>
                   <div class="col-xs-12 col-md-4 sp-col-right sticky-sidebar">
                       <div class="product-summary pb-5">
                           <h1 class="product-title">Wavye Console</h1>
-                          <div class="product-brand">By Josmo</div>
+                          <div class="product-brand">By <a href="#" target="_self">Josmo</a></div>
                           <div class="price-wrap mt-3">
                               <p class="price">
                                   <span class="Price-amount amount">
@@ -353,26 +374,24 @@
                                   </span>
                               </p>
                           </div>
-                          <div class="short-description">
-                              <p>Cooper is a sofa series with a twist, a simple cut out created for the backrest to sink in. Fully upholstered sofa available in a single-seater as well as a three-seater option. Elevated on casted metal legs, don’t forget to check out the beautifully stitched x-details.</p>
-                          </div>
                           <div class="cart">
                               <div class="quantity">
-                                  <div class="quantity-box">
-                                      <button type="button" class="qty-btn minus-btn">-</button>
-                                      <input type="number" class="custom-qty qty" value="1" min="1">
-                                      <button type="button" class="qty-btn plus-btn">+</button>
+                                <div class="quantity-box">
+                                    <button type="button" class="qty-btn minus-btn">-</button>
+                                    <input type="number" name="qty" class="custom-qty qty" value="1" min="1">
+                                    <button type="button" class="qty-btn plus-btn">+</button>
+                                </div>
+                              </div>
+                              <div class="d-flex">
+                                  <div class="add-to-fav-wrap">
+                                      <button type="button" class="add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                                  </div>
+                                  <div class="flex-fill add-to-cart-wrap">    
+                                      <button type="button" class="btn btn-primary add_to_cart_button">Add to cart</button>
                                   </div>
                               </div>
-                               <div class="d-flex">
-                                    <div class="add-to-fav-wrap">
-                                        <button type="button" class="add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
-                                    </div>
-                                    <div class="flex-fill add-to-cart-wrap">    
-                                        <button type="button" class="btn btn-primary add_to_cart_button">Add to cart</button>
-                                    </div>
-                                </div>
-                          <div class="accordion mt-4" id="product-additionDetail">
+                          </div>
+                          <div class="accordion mt-5" id="product-additionDetail">
                               <div class="accordion-card accordion-description">
                                 <div class="accordion-heading" id="description">
                                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse__1" aria-expanded="true" aria-controls="collapseOne">Description</button>
@@ -380,11 +399,11 @@
                             
                                 <div id="collapse__1" class="collapse show" aria-labelledby="description" data-parent="#product-additionDetail">
                                   <div class="accordion-body">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                                    <p>Cooper is a sofa series with a twist, a simple cut out created for the backrest to sink in. Fully upholstered sofa available in a single-seater as well as a three-seater option. Elevated on casted metal legs, don’t forget to check out the beautifully stitched x-details.</p>
                                   </div>
                                 </div>
                               </div>
-      
+                            
                               <div class="accordion-card accordion-properties">
                                 <div class="accordion-heading" id="properties">
                                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse__2" aria-expanded="false" aria-controls="collapseOne">Properties</button>
@@ -392,11 +411,19 @@
                             
                                 <div id="collapse__2" class="collapse" aria-labelledby="properties" data-parent="#product-additionDetail">
                                   <div class="accordion-body">
-                                    
+                                    <ul>
+                                      <li>Dimensions:  L 72" x D 22" x H 36"</li>
+                                      <li>Material:  Plywood, Solid Wood, Veneer, Laminate, Glass</li>
+                                      <li>Finish: Red Oak Wood In A Natural Oil Finish</li>
+                                      <li>No. Of Shelves: 4</li>
+                                      <li>Storage Type: Closed Storage</li>
+                                      <li>Installation Type: Floor Standing</li>
+                                      <li>Care Instructions: Wipe with damp cloth.</li>
+                                    </ul>
                                   </div>
                                 </div>
                               </div>
-      
+                            
                               <div class="accordion-card accordion-shipping-delivery">
                                 <div class="accordion-heading" id="shipping-delivery">
                                   <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse__3" aria-expanded="false" aria-controls="collapseOne">Shipping & Delivery</button>
@@ -404,18 +431,83 @@
                             
                                 <div id="collapse__3" class="collapse" aria-labelledby="shipping-delivery" data-parent="#product-additionDetail">
                                   <div class="accordion-body">
-                                    
+                                      <p>This item arrives in 2-4 weeks via White Glove Delivery. We deliver within the continental United States.</p>
+                                      <p>Our White-Glove Delivery Service includes bringing the item into your home (up no more than two flights of stairs), unpacking it and removing all packaging. Headboards will be unpacked but not attached to existing bed frames.
+                                      We want you to be thrilled with your purchase. If you're not completely satisfied, we’ll gladly offer you an exchange or refund of the merchandise price within 30 days of receipt of product.
+                                      If you have questions about shipping, delivery or returns, please call our Customer Care team at <a href="tel:+91 832 3915770" target="_blank">+91 832 3915770</a> or email us at <a href="mailto:hello@andso.in" target="_blank">hello@andso.in</a>.</p>
                                   </div>
                                 </div>
                               </div>
-                          </div>
-
-                      </div>
-                      
+                          </div>                          
                   </div>
               </div>
           </div>
-        </div><footer class="footer" id="footer">
+        </div>
+
+      
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+          
+          <div class="pswp__bg"></div>
+
+          
+          <div class="pswp__scroll-wrap">
+
+              
+              <div class="pswp__container">
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+                  <div class="pswp__item"></div>
+              </div>
+
+              
+              <div class="pswp__ui pswp__ui--hidden">
+
+                  <div class="pswp__top-bar">
+
+                      
+
+                      <div class="pswp__counter"></div>
+
+                      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                      <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                      
+                      
+                      <div class="pswp__preloader">
+                          <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                              <div class="pswp__preloader__donut"></div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                      <div class="pswp__share-tooltip"></div> 
+                  </div>
+
+                  <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                  </button>
+
+                  <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                  </button>
+
+                  <div class="pswp__caption">
+                      <div class="pswp__caption__center"></div>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+      </div><footer class="footer" id="footer">
 	<div class="container-fluid">
 
 		
@@ -520,6 +612,8 @@
 <script type="text/javascript" src="/andso/public/js/vendor/bootstrap.min.js"></script>
 <script type="text/javascript" src="/andso/public/js/app.js"></script>
 <script type="text/javascript" src="/andso/public/js/vendor/theia-sticky-sidebar.js"></script>
-        <script type="text/javascript" src="/andso/public/js/theme/sticky-sidebar.js"></script>
+        <script type="text/javascript" src="/andso/public/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="/andso/public/js/vendor/photoswipe.min.js"></script>
+        <script type="text/javascript" src="/andso/public/js/vendor/photoswipe-ui-default.js"></script>
     </body>
 </html>        

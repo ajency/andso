@@ -1,7 +1,8 @@
 .product {
     &-title {
+        font-size: 1.5rem;
         text-transform: uppercase;
-        margin-bottom: .5rem;
+        margin-bottom: 0;        
     }
     &-summary {
         .price {
@@ -9,7 +10,8 @@
             font-weight: 400;
         }
         @include media-min(lg) {
-            padding-left: 2vw;
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
         }
     }
 }

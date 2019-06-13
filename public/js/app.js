@@ -7,28 +7,54 @@ $(document).ready(function(){
     });
 
     if($('.sticky-sidebar').length){
-        var sticky_offset = $('#header .header-navbar').height() + 10;
+        var sticky_offset = $('#header .header-navbar').height() + 40;
         $('.sticky-sidebar').theiaStickySidebar({
             // Settings
             additionalMarginTop: sticky_offset,
         });
     }
 
-    // $(document).on('click', '.minus-btn', function(e){
-    //     e.preventDefault();
-    //     var qty = $('.qty').val();
-    //     if(qty != 1){
-    //         nqty = parseInt(qty) + 1;
-    //         $('.qty').val(nqty);
-    //     }        
-    // });
-    // $(document).on('click', '.plus-btn', function(e){
-    //     e.preventDefault();
-    //     var qty = $('.qty').val();
-    //     if(qty != 1){
-    //         $('.qty').val();
-    //     }
-    // });
+    // This button will increment the value
+    $('.plus-btn').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = 'qty';
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(1);
+        }
+    });
+    
+    // This button will decrement the value till 0
+    $(".minus-btn").click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = 'qty';
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 1) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(1);
+        }
+    });
+
+    init_product_gallery();
+
+    $(document).on('click', '.add-to-fav', function(){
+        $(this).toggleClass('added');
+    });
 
 });
 
@@ -39,3 +65,40 @@ $(window).scroll(function(){
     if (scroll >= 35) sticky.addClass('header-sticky');
     else sticky.removeClass('header-sticky');
 });
+
+
+function init_product_gallery(){
+    // Init empty gallery array
+    var container = [];
+
+    // Loop over gallery items and push it to the array
+    $('#gallery').find('figure').each(function() {
+        var $link = $(this).find('a'),
+        item = {
+            src: $link.attr('href'),
+            w: $link.data('width'),
+            h: $link.data('height'),
+            title: $link.data('caption')
+        };
+        container.push(item);
+    });
+
+    // Define click event on gallery item
+    $('a').click(function(event) {
+
+        // Prevent location change
+        event.preventDefault();
+
+        // Define object and gallery options
+        var $pswp = $('.pswp')[0],
+        options = {
+            index: $(this).parent('figure').index(),
+            bgOpacity: 0.85,
+            showHideOpacity: true
+        };
+
+        // Initialize PhotoSwipe
+        var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+        gallery.init();
+    });
+}
