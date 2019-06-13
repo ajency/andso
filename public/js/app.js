@@ -54,7 +54,23 @@ $(document).ready(function(){
 
     $(document).on('click', '.add-to-fav', function(){
         $(this).toggleClass('added');
+        $('i', this).toggleClass('pulse');
+        $this = $('i', this);
+        setTimeout(function(){
+            $this.toggleClass('animated');
+        },250);
+        $( this ).removeClass('hovered');
     });
+
+    $( ".add-to-fav" ).hover(
+    function() {
+        $( this ).addClass('hovered');
+    }, function() {
+        $( this ).removeClass('hovered');
+    }
+    );
+
+    
 
 });
 
@@ -84,7 +100,7 @@ function init_product_gallery(){
     });
 
     // Define click event on gallery item
-    $('a').click(function(event) {
+    $('.product-image a').click(function(event) {
 
         // Prevent location change
         event.preventDefault();
@@ -94,7 +110,8 @@ function init_product_gallery(){
         options = {
             index: $(this).parent('figure').index(),
             bgOpacity: 0.85,
-            showHideOpacity: true
+            showHideOpacity: true,
+            closeOnScroll: false
         };
 
         // Initialize PhotoSwipe

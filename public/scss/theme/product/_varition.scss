@@ -1,0 +1,52 @@
+.product-varition {
+    .varition {
+        &-title {
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        &-list {
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                li {
+                    margin-right: 14px;
+                    margin-bottom: 14px;
+
+                    input[type=radio]{
+                        position: absolute;
+                        position: absolute;
+                        z-index: -1;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    label {
+                        min-width: 100px;
+                        border: 1px solid #333;
+                        text-align: center;
+                        font-size: 0.75rem;
+                        padding: 6px 5px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background: #333;
+                            color: #fff;
+                        }
+                        @include media-max(md){
+                            min-width: 80px;
+                        }
+                    }
+                    input[type=radio]:checked {
+                        &~ label {
+                            background: #333;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

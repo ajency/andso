@@ -39,6 +39,9 @@
     border-radius: 0;
     font-size: 0.875rem;
     padding: 0.6875rem 1rem;
+    background: #333333;
+    color: #fff;
+    border-color: #333333;
 }
 
 .add-to-fav {
@@ -63,9 +66,8 @@
     &:focus {
         outline: 0;
     }
-    &:hover,    
+    &.hovered,    
     &.added {
-        outline: 0;
         i {
             color: theme-color('primary');
         }
