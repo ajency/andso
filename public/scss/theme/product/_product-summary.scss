@@ -10,8 +10,7 @@
             font-weight: 400;
         }
         @include media-min(lg) {
-            padding-left: 2.5vw;
-            padding-right: 2.5vw;
+            padding-left: 3.5vw;
         }
         @include media-max(md) {
             padding-top: 0.9375rem;
