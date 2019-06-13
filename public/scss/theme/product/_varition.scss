@@ -53,7 +53,7 @@
                 ul {
                     li {
                         margin-bottom: 8px;
-                        
+
                         label {
                             min-width: inherit;                            
                             border-radius: 56%;                            
@@ -78,11 +78,14 @@
                                     background: #bf7953;
                                 }                       
                                 &.grey {
-                                    background: #bf7953;
+                                    background: #9E9E9E;
                                 } 
                                 &.dark-grey {
-                                    background: #bf7953;
-                                }        
+                                    background: #455a64;
+                                }  
+                                &.black {
+                                    background: #25252c;
+                                }      
                             }                            
                         }
                         input[type=radio]:checked {
