@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>  
-    <link href="{{"css/vendor/animate.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/magnific-popup.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/photoswipe.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/default-skin/default-skin.css" | absURL}}" rel="stylesheet">
+    {{- partial "product-head.html" . -}}  
 
     {{- partial "head.html" . -}}  
     <body class="product-single">
@@ -210,9 +207,6 @@
       </div>
 
         {{- partial "footer.html" . -}}
-        <script type="text/javascript" src="{{"js/vendor/theia-sticky-sidebar.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/jquery.magnific-popup.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe-ui-default.js" | relURL}}"></script>
+        {{- partial "product-footer.html" . -}}
     </body>
 </html>        

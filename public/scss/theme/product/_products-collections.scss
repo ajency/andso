@@ -1,0 +1,83 @@
+.collection-img-container {
+    position: relative;
+
+    .material-color-box {
+        width: 216px;
+        height: 216px;
+        background: #73a6c8;
+        position: absolute;
+        top: 0;
+        right: -60px;
+        z-index: -1;
+        @include media-max(lg){
+            width: 150px;
+            height: 150px;
+            right: -40px;
+        }
+    }
+    .collection-img {        
+        @include media-min(md){
+            padding-top: 60px;
+            opacity: 1;
+
+            transition: all 0.6s ease;
+            &:hover {
+                opacity: .8; 
+            }
+        }
+        @include media-min(lg){
+            padding-top: 40px;
+        }
+    }
+    @include media-max(md){
+        margin: 0 -15px;
+    }
+}
+
+.collection-content {
+    .section {
+        &-title {
+            margin-bottom: 0;
+            font-size: 3.125rem;
+            font-weight: 600;            
+        }
+        &-content {
+            font-size: 1.25rem;
+        }
+        @include media-max(md){
+            &-title {
+                font-size: 1.5rem;
+            }
+            &-content {
+                font-size: 0.875rem;
+            }
+        }
+    }
+    @include media-max(md){
+        text-align: center;
+        padding-top: 1.25rem;
+    }
+    @include media-min(md){
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 100px;
+    }
+}
+.collection-actions {
+    margin-bottom: 1.5rem;
+}
+.shop-by-collection-btn {
+    padding: 0 0;
+    border: 1px solid #333;
+    box-shadow: none !important;
+    font-size: 1rem;
+    text-transform: uppercase;
+    &:hover {
+        background: theme-color('primary');
+        border-color: theme-color('primary');
+    }
+    @include media-max(md){
+        font-size: 0.875rem;
+        padding: .6875rem 3.125rem;
+    }
+}

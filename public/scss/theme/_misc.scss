@@ -3,6 +3,10 @@ body {
     letter-spacing: 0.5px;
 }
 .container-fluid {
+    @include media-min(lg) {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
     @include media-min(xlg) {
         padding-left: 6rem;
         padding-right: 6rem;
@@ -27,5 +31,11 @@ body {
     to {
       -webkit-transform: scale3d(1, 1, 1);
       transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .slick-track {
+    .slick-slide {
+      outline: 0;
     }
   }

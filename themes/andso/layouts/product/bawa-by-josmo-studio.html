@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <link href="{{"css/vendor/animate.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/magnific-popup.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/photoswipe.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/default-skin/default-skin.css" | absURL}}" rel="stylesheet">
-    {{- partial "head.html" . -}}    
+    {{- partial "product-head.html" . -}}    
+    {{- partial "head.html" . -}}
+
     <body class="product-single">
         {{- partial "header.html" . -}}
 
@@ -157,17 +155,24 @@
               </div>
           </div>
         </div>
+      
+      <!-- Collections -->
+      {{- partial "products/products-collections.html" . -}}   
+      <!-- End of Collections -->   
+
+
+      <!-- Similiar Products -->
+      {{- partial "products/related-products.html" . -}}      
+      <!-- End of Similiar Products -->
+
 
       <!-- Root element of PhotoSwipe. Must have class pswp. -->
       <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
           <!-- Background of PhotoSwipe. 
               It's a separate element as animating opacity is faster than rgba(). -->
           <div class="pswp__bg"></div>
-
           <!-- Slides wrapper with overflow:hidden. -->
           <div class="pswp__scroll-wrap">
-
               <!-- Container that holds slides. 
                   PhotoSwipe keeps only 3 of them in the DOM to save memory.
                   Don't modify these 3 pswp__item elements, data is added later on. -->
@@ -179,21 +184,13 @@
 
               <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
               <div class="pswp__ui pswp__ui--hidden">
-
                   <div class="pswp__top-bar">
-
                       <!--  Controls are self-explanatory. Order can be changed. -->
-
                       <div class="pswp__counter"></div>
-
                       <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
                       <button class="pswp__button pswp__button--share" title="Share"></button>
-
                       <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
                       <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
                       <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
                       <!-- element will get class pswp__preloader--active when preloader is running -->
                       <div class="pswp__preloader">
@@ -204,32 +201,24 @@
                           </div>
                       </div>
                   </div>
-
                   <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
                       <div class="pswp__share-tooltip"></div> 
                   </div>
-
                   <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
                   </button>
-
                   <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
                   </button>
-
                   <div class="pswp__caption">
                       <div class="pswp__caption__center"></div>
                   </div>
-
               </div>
-
           </div>
-
       </div>
+
       </div>
 
         {{- partial "footer.html" . -}}
-        <script type="text/javascript" src="{{"js/vendor/theia-sticky-sidebar.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/jquery.magnific-popup.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe-ui-default.js" | relURL}}"></script>
+        {{- partial "product-footer.html" . -}}
+
     </body>
 </html>        

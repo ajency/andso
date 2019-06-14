@@ -1,5 +1,5 @@
 body {
-    padding-top: 101px;
+    padding-top: 113px;
     @include media-max(md) {
         padding-top: 64px;
     }
@@ -82,7 +82,7 @@ body {
             }
         }
     }
-    .menu {
+    .menu {        
         a {
             &:hover,
             &:focus {
@@ -95,8 +95,8 @@ body {
                 font-weight: 500;
             }
             @include media-min(md) {
-                &:first-child {
-                    padding-left: 0;
+                &:last-child {
+                    padding-right: 0;
                 }
             }
         }
@@ -120,7 +120,7 @@ body {
     
             > .menu-item {
                 float: left; 
-                padding: 1.375rem 0.65rem;
+                padding: 1.75rem 0.65rem;
             }            
             .mega-menu {
                 position: absolute;
@@ -143,6 +143,7 @@ body {
             }
         }
         @include media-min(lg) {
+            float: right;
             > .menu-item {
                 padding-left: 1.25rem;
                 padding-right: 1.25rem;
@@ -152,7 +153,24 @@ body {
         //     > a {
         //         color: theme-color('primary');
         //     }
-        // }    
+        // } 
+        .badge {
+            position: absolute;
+            top: -15px;
+            right: -2px;
+            font-size: 70%;
+            @include media-max(md) {
+                top: 2px;
+                right: 0;
+            }
+        }   
+        .new-item {
+            @include media-max(md) {
+                a {
+                    padding-right: 45px;
+                }
+            }
+        }
     } 
     .highlight-menu-item {
         &.item-pink {

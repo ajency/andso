@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link href="{{"css/vendor/animate.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/magnific-popup.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/photoswipe.css" | absURL}}" rel="stylesheet">
-    <link href="{{"css/vendor/default-skin/default-skin.css" | absURL}}" rel="stylesheet">
+    {{- partial "product-head.html" . -}}
     {{- partial "head.html" . -}}    
     <body class="product-single">
         {{- partial "header.html" . -}}
@@ -11,6 +8,7 @@
         {{- partial "breadcrumb.html" . -}}
 
         <div class="page-container">
+
           <div class="container-fluid">
               <div class="row">
                   <div class="col-xs-12 col-md-8 sp-col-left">
@@ -87,7 +85,6 @@
                                   </ul>
                                 </div>
                               </div>
-
                           </div>
 
                           <div class="cart">
@@ -159,6 +156,18 @@
                   </div>
               </div>
           </div>
+
+        <!-- Similiar Products -->
+            <div class="related-products mt-3">
+              <div class="container-fluid">
+                <div class="rp-section-headgin">
+                    <h3 class="section-heading heading-type1 text-center">Similar Products</h3>
+                </div>
+              </div>
+              {{- partial "product-loop.html" . -}}
+            </div>
+        <!-- End of Similiar Products -->
+
         </div>
 
       <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -230,9 +239,6 @@
       </div>
 
         {{- partial "footer.html" . -}}
-        <script type="text/javascript" src="{{"js/vendor/theia-sticky-sidebar.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/jquery.magnific-popup.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe.min.js" | relURL}}"></script>
-        <script type="text/javascript" src="{{"js/vendor/photoswipe-ui-default.js" | relURL}}"></script>
+        {{- partial "product-footer.html" . -}}
     </body>
 </html>        

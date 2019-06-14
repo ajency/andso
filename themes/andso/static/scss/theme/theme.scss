@@ -4,14 +4,18 @@
 @import "_typography";
 
 
-@import "header/_header_style1";
-
 @import "product/_product-gallery";
 @import "product/_product-summary";
 @import "product/_add-to-cart";
 @import "product/_accordian";
 @import "product/_varition";
 @import "product/_product";
+
+@import "product/_product-loop";
+@import "product/_related-products";
+@import "_slick_slider";
+
+@import "product/_products-collections";
 
 
 

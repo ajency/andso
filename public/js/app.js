@@ -52,7 +52,7 @@ $(document).ready(function(){
 
     init_product_gallery();
 
-    $(document).on('click', '.add-to-fav', function(){
+    $(document).on('click', '.add-to-fav,.loop-add-to-fav', function(){
         $(this).toggleClass('added');
         $('i', this).toggleClass('pulse');
         $this = $('i', this);
@@ -62,7 +62,7 @@ $(document).ready(function(){
         $( this ).removeClass('hovered');
     });
 
-    $( ".add-to-fav" ).hover(
+    $( ".add-to-fav,.loop-add-to-fav" ).hover(
     function() {
         $( this ).addClass('hovered');
     }, function() {
@@ -70,6 +70,29 @@ $(document).ready(function(){
     }
     );
 
+    $("#related-products ul.products").slick({
+        infinite: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+            }
+      
+          }, {    
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+            },                        
+          }, {    
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }                       
+        }]
+    });
     
 
 });
