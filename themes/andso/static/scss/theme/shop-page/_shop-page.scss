@@ -1,0 +1,7 @@
+.shop-page {
+    .product-listing {
+        @include media-min(md){
+            padding-left: 30px;
+        }
+    }
+}
