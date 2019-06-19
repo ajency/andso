@@ -1,8 +1,14 @@
 <div class="related-products mt-5" id="related-products">
-    <div class="container-fluid">
+    <div class="container-fluid container-spacing">
         <div class="rp-section-heading">
             <h3 class="section-heading heading-type1 text-center">Similar Products</h3>
         </div>
     </div>
-    {{- partial "product-loop.html" . -}}
+    <div class="product-loop-section">
+        <div class="container-fluid container-spacing">
+            <ul class="products">
+                {{- partial "product-loop.html" . -}}
+            </ul>
+        </div> 
+    </div> 
 </div>

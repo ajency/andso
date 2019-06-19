@@ -1,13 +1,19 @@
-.ft-section-title {
-    color: theme-color('neworleans');
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: .75rem;
-    font-weight: 500;
-    margin-bottom: 0.625rem;
+.ft-section {
+    &-title {
+        color: theme-color('neworleans');
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: .875rem;
+        font-weight: 500;
+        margin-bottom: 0.1875rem;
 
-    @include media-max(md){
-        text-align: center;
+        @include media-max(md){
+            text-align: center;
+        }
+    }
+    &-sub-title {
+        color: #fff; 
+        font-size: 0.875rem;
     }
 }
 
@@ -23,7 +29,7 @@
         li {
             a {
                 color: #fff;
-                font-size: .725rem;
+                font-size: .875rem;
                 text-decoration: none;
             }
         }
@@ -33,7 +39,7 @@
     }
     .footer-sticky-bg {
         position: absolute;
-        bottom: 0;
+        bottom: 20px;
         z-index: 1;
         width: 100%;
         height: auto;
@@ -42,5 +48,10 @@
         max-width: 400px;
         pointer-events: none;
     }
+}
+
+.infoIcon-size {
+    vertical-align: middle;
+    margin-right: 8px;
 }
 

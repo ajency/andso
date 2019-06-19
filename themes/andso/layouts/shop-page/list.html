@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>  
+    <link href="{{"css/vendor/ion.rangeSlider.min.css" | absURL}}" rel="stylesheet">
+    {{- partial "head.html" . -}}
+    <body class="shop-page">
+        {{- partial "header.html" . -}}
+
+        {{- partial "breadcrumb.html" . -}}
+        
+        <div class="container-fluid container-spacing">
+            <div class="row">
+                <div class="col-md-3 col-xl-2">
+                    {{- partial "shop-page-components/sidebar.html" . -}}
+                </div>
+                <div class="col-md-9 col-xl-10">
+                    <div class="row">
+                        <div class="product-listing">
+                            <div class="product-loop-section">
+                                <ul class="products">
+                                    {{- partial "product-loop.html" . -}}
+                                    {{- partial "product-loop.html" . -}}
+                                </ul>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+        
+        {{- partial "footer.html" . -}}
+        <script type="text/javascript" src="{{"js/vendor/ion.rangeSlider.min.js" | relURL}}"></script>
+    </body>
+</html>      

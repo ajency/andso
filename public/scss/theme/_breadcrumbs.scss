@@ -9,17 +9,30 @@
         a {
             color: theme-color('dovegray');
             text-decoration: none;
-            font-size: 0.75rem;
+            font-size: 0.875rem;
+            font-weight: 300;
         }
         &:after {
-            content: "/";
+            content: "\f105";
             padding-left: 8px;
             vertical-align: middle;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            line-height: 1;
+            color: #646464;
+            font-size: 0.875rem;
         }
         &:last-child {
             padding-right: 0;
             a {
                 color: theme-color('primary');
+                font-weight: 600;
             }
             &:after {
                 display: none;

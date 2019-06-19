@@ -9,9 +9,9 @@
         {{- partial "breadcrumb.html" . -}}
 
         <div class="page-container">
-          <div class="container-fluid">
+          <div class="container-fluid container-spacing">
               <div class="row">
-                  <div class="col-xs-12 col-md-8 sp-col-left">
+                  <div class="col-xs-12 col-md-7 col-xl-8 sp-col-left">
                       <div id="gallery" class="product-image gallery clearfix" itemscope itemtype="http://schema.org/ImageGallery">
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
                           <a href="{{"img/ps-potrait_1.jpg" | absURL}}" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -30,7 +30,7 @@
                         </figure>
                       </div>
                   </div>
-                  <div class="col-xs-12 col-md-4 sp-col-right sticky-sidebar">
+                  <div class="col-xs-12 col-md-5 col-xl-4 sp-col-right sticky-sidebar">
                       <div class="product-summary pb-5">
                           <h1 class="product-title">BAWA LOUNGER</h1>
                           <div class="product-brand">By <a href="#" target="_self">Josmo</a></div>
@@ -45,6 +45,25 @@
                           </div>
 
                           <div class="product-varition mb-4">
+                            <div class="varition-box varition-color">
+                              <div class="varition-title">Color: <span class="color-val"></span></div>
+                              <div class="varition-list">
+                                <ul>
+                                  <li>
+                                    <input type="radio" class="color-varient" data-colorname="Black" name="color" id="color-1" checked>
+                                    <label for="color-1"><div class="color black"></div></label>
+                                  </li>
+                                  <li>
+                                    <input type="radio" class="color-varient" data-colorname="Grey" name="color" id="color-2">
+                                    <label for="color-2"><div class="color grey"></div></label>
+                                  </li>
+                                  <li>
+                                    <input type="radio" class="color-varient" data-colorname="Dark Grey" name="color" id="color-3">
+                                    <label for="color-3" ><div class="color dark-grey"></div></label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                             <div class="varition-box varition-size">
                               <div class="varition-title">Size</div>
                               <div class="varition-list">
@@ -64,34 +83,18 @@
                                 </ul>
                               </div>
                             </div>
-                            <div class="varition-box varition-color">
-                                <div class="varition-title">Color</div>
-                                <div class="varition-list">
-                                  <ul>
-                                    <li>
-                                      <input type="radio" class="color-varient" name="color" id="color-1" checked>
-                                      <label for="color-1"><div class="color black"></div></label>
-                                    </li>
-                                    <li>
-                                      <input type="radio" class="color-varient" name="color" id="color-2">
-                                      <label for="color-2"><div class="color grey"></div></label>
-                                    </li>
-                                    <li>
-                                      <input type="radio" class="color-varient" name="color" id="color-3">
-                                      <label for="color-3"><div class="color dark-grey"></div></label>
-                                    </li>
-                                  </ul>
-                                </div>
-                              </div>
                           </div>
 
                           <div class="cart">
-                              <div class="quantity">
-                                <div class="quantity-box">
-                                    <button type="button" class="qty-btn minus-btn">-</button>
-                                    <input type="number" name="qty" class="custom-qty qty" value="1" min="1" disabled>
-                                    <button type="button" class="qty-btn plus-btn">+</button>
-                                </div>
+                              <div class="d-flex align-items-center pb-3">
+                                  <div class="quantity">
+                                    <div class="quantity-box">
+                                        <button type="button" class="qty-btn minus-btn">-</button>
+                                        <input type="number" name="qty" class="custom-qty qty" value="1" min="1" disabled>
+                                        <button type="button" class="qty-btn plus-btn">+</button>
+                                    </div>
+                                  </div>
+                                  <div class="product-set-of">Set of 4</div>                                  
                               </div>
                               <div class="d-flex">
                                   <div class="add-to-fav-wrap">

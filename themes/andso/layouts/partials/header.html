@@ -1,18 +1,19 @@
 <header class="header header__style1" id="header">
     <div class="header-topbar d-none d-lg-block">
-        <div class="container-fluid d-flex justify-content-between">
+        <div class="container-fluid d-flex justify-content-between container-spacing">
             <ul class="contact-info d-flex">
                 <li class="phone-number"><a href="tel:+918323915770" target="_self"><i class="icon ion-md-call nav-icon"></i> +91 832 3915770</a></li>
                 <li class="email"><a href="mailto:hello@andso.in" target="_self"><i class="icon ion-md-mail nav-icon"></i> hello@andso.in</a></li>
             </ul>
-            <ul class="nav-links d-flex">
+            <ul class="nav-links d-flex align-items-center">
+                <li><a href="#" target="_self" class="menu-link"><i class="fas fa-map-marker-alt nav-icon"></i> Visit Our Store</a></li>
                 <li><a href="#" target="_self" class="menu-link"><i class="icon ion-md-person nav-icon"></i> My Account</a></li>
                 <li><a href="#" target="_self" class="menu-link header-cart"><i class="icon ion-md-cart nav-icon"></i><span class="cart-count">2</span></a></li>
             </ul>
         </div>
     </div>
     <div class="header-navbar">
-        <div class="container-fluid">
+        <div class="container-fluid container-spacing">
             <nav class="navbar pl-0 pr-0">
                 <div class="header-logo">
                     <a class="navbar-brand" href="{{$.Site.BaseURL}}"><img src="{{"img/andso-logo.svg" | absURL}}" class="img-fluid" alt="logo" width="60" height="60"><span class="logo-text d-none">AND SO</span></a>

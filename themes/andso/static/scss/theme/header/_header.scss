@@ -1,5 +1,5 @@
 body {
-    padding-top: 113px;
+    padding-top: 105px;
     @include media-max(md) {
         padding-top: 64px;
     }
@@ -241,28 +241,36 @@ body {
         }
 
         .menu-container {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
             display: flex;
             flex-wrap: wrap;
             overflow: auto;
             max-height: 75vh;
+            padding-left: 6rem;
+            padding-right: 6rem;
 
             > .sub-menu {
                 width: 65%;
                 float: left;
                 display: flex;
-
+                margin-left: -15px;
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
                 > li {
                     //flex: 1 0 25%;
-                    width: 25%;
+                    width: 33.33%;
                     padding: 20px 15px !important;
 
                     > a {
-                        font-weight: 700;
+                        font-weight: 600;
                         padding: 0 0 18px;
                         position: relative;
-                        color: #fff;
+                        color: #fff;                        
+
                         &:after {
                             content: "";
                             display: block;
@@ -299,6 +307,8 @@ body {
     }
     @include media-max(md) { 
         .menu-container {
+            padding-left: 4rem;
+            padding-right: 4rem;
             > .sub-menu {
                 > li {
                     padding-top: 10px;

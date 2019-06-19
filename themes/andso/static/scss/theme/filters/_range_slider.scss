@@ -1,0 +1,44 @@
+.price-slider-wrapper {
+    padding-top: 10px;
+    
+    .irs {
+        .irs {
+            &-from,
+            &-to {
+                background: theme-color('crusta');
+                font-size: 0.75rem;
+            }
+            &-min,
+            &-max {
+                font-size: 0.75rem;
+            }
+            &-handle {
+                width: 20px;
+                height: 20px;
+
+                
+                i {
+                    &:first-child {
+                        background: transparent;
+                    }
+                }
+
+                &.from,
+                &.to {
+                    background: #fff;
+                    border: 1px solid theme-color('dark');
+                    border-radius: 56%;
+                }
+            }
+            &-bar {
+                height: 2px;
+                background: theme-color('dark');
+                top: 31px;
+            }
+            &-line {
+                height: 2px;
+                top: 31px;
+            }
+        }
+    }
+}

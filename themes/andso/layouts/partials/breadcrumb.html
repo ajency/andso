@@ -1,9 +1,11 @@
-<div class="container-fluid">
+{{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
+<div class="container-fluid container-spacing">    
     <ul class="breadcrumb">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Furniture</a></li>
-        <li><a href="#">Seating</a></li>
-        <li><a href="#">Sofas</a></li>
-        <li><a href="#">Cooper Sofa</a></li>
+        {{ range $index, $element := split $url "/" }}
+            {{ if ne $element "" }}            
+            <li><a href="{{ . | absURL }}">{{ . }}</a></li>
+            {{ end }}
+        {{ end }}
     </ul>
 </div>

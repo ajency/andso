@@ -8,9 +8,9 @@
 				border-right: 0;
 			}
 			a{
-				color: $linen;
+				color: theme-color('linen');
 				padding: 0 1rem;
-				font-size: .75rem;
+				font-size: .875rem;
 				padding: 0 1.2rem;
 
 				&:hover{
@@ -31,8 +31,8 @@
 .site-info{
 	text-align: center;
 	.copyright{
-		color: $linen;
+		color: theme-color('linen');
 		padding: 0 0 1rem;
-		font-size: .75rem;
+		font-size: .875rem;
 	}
 }

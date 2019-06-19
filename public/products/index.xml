@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Products on AND SO Store</title>
+    <link>https://ajency.github.io/andso/public/products/</link>
+    <description>Recent content in Products on AND SO Store</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 May 2019 10:45:49 +0530</lastBuildDate>
+    
+	<atom:link href="https://ajency.github.io/andso/public/products/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shop Page</title>
+      <link>https://ajency.github.io/andso/public/products/products/</link>
+      <pubDate>Fri, 31 May 2019 10:45:49 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/andso/public/products/products/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

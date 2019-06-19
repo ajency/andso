@@ -70,30 +70,37 @@ $(document).ready(function(){
     }
     );
 
-    $("#related-products ul.products").slick({
-        infinite: false,
-        arrows: true,
-        dots: false,
-        slidesToShow: 4,
-        responsive: [{
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 3,
-            }
-      
-          }, {    
-            breakpoint: 767,
-            settings: {
-              slidesToShow: 2,
-            },                        
-          }, {    
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 1,
-            }                       
-        }]
-    });
-    
+    if($('#related-products').length){
+        $("#related-products ul.products").slick({
+            infinite: false,
+            arrows: true,
+            dots: false,
+            slidesToShow: 4,
+            responsive: [{
+                breakpoint: 991,
+                settings: {
+                slidesToShow: 3,
+                }
+        
+            }, {    
+                breakpoint: 767,
+                settings: {
+                slidesToShow: 2,
+                },                        
+            }, {    
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }                       
+            }]
+        });
+    }
+
+    if($('.price-range-slider').length){
+        $(".price-range-slider").ionRangeSlider();
+    }
+
+    color_switcher();
 
 });
 
@@ -134,11 +141,20 @@ function init_product_gallery(){
             index: $(this).parent('figure').index(),
             bgOpacity: 0.85,
             showHideOpacity: true,
-            closeOnScroll: false
+            closeOnScroll: false,
+            maxSpreadZoom: 10,
         };
 
         // Initialize PhotoSwipe
         var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
         gallery.init();
+    });
+}
+
+function color_switcher(){
+    $('.color-val').text($('input[name="color"]:checked').data('colorname'));
+    $('input[name="color"]').on('change', function(){
+        var colorname = $(this).data('colorname');        
+        $('.color-val').text(colorname);
     });
 }

@@ -1,5 +1,4 @@
 .contact-block{
-	margin-bottom: 1.25rem;
 	.info-block{
 		border-right: 1px solid #646464;
 		margin-bottom: 1rem;
@@ -10,7 +9,7 @@
 	.request-block{
 		padding: 0.5rem 0;
 		.request-btn {
-			font-size: 12px;
+			font-size: 0.875rem;
 			font-weight: 700;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -22,7 +21,7 @@
 			font-weight: 400;
 		}
 		.request-text {
-			font-size: 0.75rem;
+			font-size: 0.875rem;
 		}
 		@include media-max(md){
 			text-align: center;
@@ -45,7 +44,7 @@
 		font-size: .875rem;
 		margin-bottom: 2px;
 		a{
-			color: $linen;
+			color: theme-color('linen');
 			&:hover{
 				text-decoration: none;
 			}
@@ -53,63 +52,17 @@
 	}
 }
 
-.social-links {
-	display: flex;
-	justify-content: space-between;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	max-width: 45%;
-
-	.social-link {
-		margin-right: 12px;
-		margin-bottom: 10px;
-
-		a {
-			width: 35px;
-			height: 34px;
-			border-radius: 56%;
-			display: block;
-			text-align: center;
-			font-size: 20px;			
-			padding-top: 4px;
-			display: block;		
-			transition: all 0.6s ease;
-		}
-		&.fb {
-			a {				
-				color: #fff;
-				background: #3b5998;					
-
-			}
-		}
-		&.insta {
-			a {
-				color: #fff;
-				background: #e95950;					
-			}
-		}
-		&.pinterest {
-			a {				
-				color: #fff;
-				background: #bd081c;				
-			}
-		}
-	}	
-	@include media-max(md){
-		margin: 0 auto;
-		max-width: 50%;
-	}	
-}
-
 .customer-care {
+	margin-top: 8px;
 	.cc-info-box {
-		margin-bottom: 1.25rem;
 		p {
 			margin-bottom: 0;
-			font-size: .75rem;
-			color: $linen;
+			font-size: .875rem;
+			color: theme-color('linen');
 		}
+	}
+	.cc-details {
+		margin-top: 0.625rem;
 	}
 	@include media-max(md){
 		text-align: center;

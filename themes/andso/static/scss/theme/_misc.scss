@@ -2,7 +2,7 @@ body {
     font-family: $roboto;
     letter-spacing: 0.5px;
 }
-.container-fluid {
+.container-spacing {
     @include media-min(lg) {
         padding-left: 4rem;
         padding-right: 4rem;
@@ -34,8 +34,8 @@ body {
     }
   }
 
-  .slick-track {
-    .slick-slide {
-      outline: 0;
-    }
+.slick-track {
+  .slick-slide {
+    outline: 0;
   }
+}

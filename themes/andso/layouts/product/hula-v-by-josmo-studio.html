@@ -9,9 +9,9 @@
         {{- partial "breadcrumb.html" . -}}
 
         <div class="page-container">
-          <div class="container-fluid">
+          <div class="container-fluid container-spacing">
               <div class="row">
-                  <div class="col-xs-12 col-md-8 sp-col-left">
+                  <div class="col-xs-12 col-md-7 col-xl-8 sp-col-left">
                       <div id="gallery" class="product-image gallery clearfix gallery-fullw" itemscope itemtype="http://schema.org/ImageGallery">
                         <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">                          
                           <a href="{{"img/ps2-landscape.jpg" | absURL}}" data-width="1200" data-height="900" itemprop="contentUrl">
@@ -20,7 +20,7 @@
                         </figure>
                       </div>
                   </div>
-                  <div class="col-xs-12 col-md-4 sp-col-right sticky-sidebar">
+                  <div class="col-xs-12 col-md-5 col-xl-4 sp-col-right sticky-sidebar">
                       <div class="product-summary pb-5">
                           <h1 class="product-title">HULA - V PENDANT LIGHT</h1>
                           <div class="product-brand">By <a href="#" target="_self">Josmo</a></div>
@@ -34,7 +34,18 @@
                               </p>
                           </div>
 
-                          <div class="product-varition mb-4">
+                          <div class="product-varition mb-3">
+                            <div class="varition-box varition-color">
+                              <div class="varition-title">Color</div>
+                              <div class="varition-list">
+                                <ul>
+                                  <li>
+                                    <input type="radio" class="color-varient" data-colorname="Brown" name="color" id="color-1" checked>
+                                    <label for="color-1"><div class="color brown"></div></label>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
                             <div class="varition-box varition-size">
                               <div class="varition-title">Size</div>
                               <div class="varition-list">
@@ -53,28 +64,20 @@
                                   </li>
                                 </ul>
                               </div>
-                              <div class="varition-box varition-color">
-                                  <div class="varition-title">Color</div>
-                                  <div class="varition-list">
-                                    <ul>
-                                      <li>
-                                        <input type="radio" class="color-varient" name="color" id="color-1" checked>
-                                        <label for="color-1"><div class="color brown"></div></label>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
                             </div>
                           </div>
 
                           <div class="cart">
-                              <div class="quantity">
-                                <div class="quantity-box">
-                                    <button type="button" class="qty-btn minus-btn">-</button>
-                                    <input type="number" name="qty" class="custom-qty qty" value="1" min="1" disabled>
-                                    <button type="button" class="qty-btn plus-btn">+</button>
+                              <div class="d-flex align-items-center pb-3">
+                                  <div class="quantity">
+                                    <div class="quantity-box">
+                                        <button type="button" class="qty-btn minus-btn">-</button>
+                                        <input type="number" name="qty" class="custom-qty qty" value="1" min="1" disabled>
+                                        <button type="button" class="qty-btn plus-btn">+</button>
+                                    </div>
+                                  </div>
+                                  <div class="product-set-of">Set of 4</div>
                                 </div>
-                              </div>
                               <div class="d-flex">
                                   <div class="add-to-fav-wrap">
                                       <button type="button" class="add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
