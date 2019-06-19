@@ -32,6 +32,9 @@
                     content: "\f368";
                 }
            }
+           @include media-max(md){
+               font-size: 1rem;
+           }
         }
         &:last-child {
             border-bottom: 1px solid theme-color('grey');
@@ -43,5 +46,11 @@
             font-size: 0.875rem;
         }
         padding-bottom: 1rem;
+        @include media-max(md){
+            font-size: 1rem;
+            p,ul {
+                font-size: 1rem;
+            }
+        }
     }
 }
