@@ -142,8 +142,16 @@ body {
                 margin-bottom: 10px;
             }
         }
-        @include media-min(lg) {
+        @include media-min(md) {
             float: right;
+        }
+        @include media-min(lg) {            
+            > .menu-item {
+                padding-left: 0.85rem;
+                padding-right: 0.85rem;
+            }
+        }  
+        @include media-min(xlg) {            
             > .menu-item {
                 padding-left: 1.25rem;
                 padding-right: 1.25rem;
