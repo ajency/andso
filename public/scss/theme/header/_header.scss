@@ -315,8 +315,8 @@ body {
     }
     @include media-max(md) { 
         .menu-container {
-            padding-left: 4rem;
-            padding-right: 4rem;
+            padding-left: 0;
+            padding-right: 0;
             > .sub-menu {
                 > li {
                     padding-top: 10px;
