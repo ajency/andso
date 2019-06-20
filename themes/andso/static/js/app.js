@@ -103,6 +103,7 @@ $(document).ready(function(){
     color_switcher();
 
     $(document).on('click', '.res-sortby-btn', function(){
+        $(this).toggleClass('active');        
         $('.sort-by-dropdown').toggleClass('opened');        
     });
 
@@ -114,10 +115,12 @@ $(document).ready(function(){
         $('.sidebar-filters').toggleClass('active');
     });
 
+    let price_slider = $(".price-range-slider").data("ionRangeSlider");
+
     //reset form
     $(document).on('click', '.clear-filters', function(){
         $('.filter-widget input[type=checkbox]').prop('checked',false);
-        console.log('go crazy');
+        price_slider.reset();
     });
 
 });

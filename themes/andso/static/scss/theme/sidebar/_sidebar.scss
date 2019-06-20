@@ -123,10 +123,23 @@
     text-transform: uppercase;
     background: #fff;
     box-shadow: none !important;
-
+    
     &.res-filter-btn {
         background: #f3d694;
         color: #333;
         font-size: 1rem;
+    }
+
+    &.res-sortby-btn {
+        .nav-icon {        
+            display: inline-block;
+            transition: all 0.6s ease;
+        }
+        
+        &.active {
+            .nav-icon { 
+                transform: rotate(180deg);
+            }
+        }
     }
 }
