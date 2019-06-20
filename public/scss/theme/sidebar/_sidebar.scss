@@ -8,6 +8,12 @@
         letter-spacing: 0.8px;
         color: theme-color('dark');
     }
+    @include media-min(md){
+        .sidebar-top-section {
+            padding-top: 10px;
+            border-bottom: 1px solid rgba(#646464, 0.25);
+        }
+    }
     @include media-max(md){
         position: fixed;
         z-index: 99;
@@ -31,7 +37,7 @@
         
         .sidebar-top-section {
             display: flex;
-            align-items: center;
+            align-items: center;            
         }
         .sidebar-title {
             text-align: center;
