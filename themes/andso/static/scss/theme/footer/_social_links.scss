@@ -17,7 +17,12 @@
 		margin-right: auto;
         max-width: 100%;
         justify-content: center;
-	}	
+    }	
+    @include media-max(md){
+        .social-title {
+            font-size: 0;
+        }
+    }
 }
 
 .facebook-color {
