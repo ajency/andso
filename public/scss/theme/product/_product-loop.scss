@@ -16,6 +16,10 @@
                 position: relative;
                 overflow: hidden;
             }
+
+            @include media-max(sm){
+                padding: 0 5px 20px;
+            }
         }           
         .item-content {
             position: relative;
@@ -35,7 +39,7 @@
                     color: #333;
                     text-decoration: none;
                     outline: 0;
-                    @include media-min(md){
+                    @include media-max(md){
                         font-size: 0.875rem;
                     }
                 }

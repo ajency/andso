@@ -4,4 +4,7 @@
             padding-left: 30px;
         }
     }
+    @include media-max(md){
+        padding-bottom: 52px;
+    }
 }

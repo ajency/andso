@@ -9,14 +9,26 @@
 	.footer-link{
 		color: white;
 		font-size: 0.875rem;
+		padding-left: 27px;
+		position: relative;
+		display: inline-block;
+		text-align: left;
+		
 		i{
 			font-size: 20px;
 		}
 		span{
 			padding: 0 0.5rem;
+			display: block;
 		}
 		&:hover{
 			text-decoration: none;
+		}
+		.sticky-icon {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 	}
 	@media (max-width: 991px){

@@ -7,6 +7,7 @@
         text-transform: uppercase;
         letter-spacing: 0.8px;
         color: theme-color('dark');
+        font-weight: 700;
     }
     @include media-min(md){
         .sidebar-top-section {
