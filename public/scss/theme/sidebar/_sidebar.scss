@@ -8,4 +8,125 @@
         letter-spacing: 0.8px;
         color: theme-color('dark');
     }
+    @include media-max(md){
+        position: fixed;
+        z-index: 99;
+        background: #fff;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;       
+        transform: translateX(-100%);
+        transition: all 0.6s ease;
+
+        &.active {
+            transform: translateX(0);
+        }
+
+        .sidebar-scrollable {
+            height: 100vh;
+            overflow: auto;
+            padding: 10px 20px 80px;
+        }
+        
+        .sidebar-top-section {
+            display: flex;
+            align-items: center;
+        }
+        .sidebar-title {
+            text-align: center;
+        }
+    }
+}
+
+.clear-filters {
+    padding: 0;
+    font-size: 0.75rem;
+    border: 0;
+    background: transparent;
+    outline: 0;
+    box-shadow: none !important;
+}
+.close-menu-popup {
+    padding: 0 10px;
+    box-shadow: none !important;
+    .nav-icon {
+        font-size: 1.5rem;
+    }
+}
+
+.mobile-sticky {
+    @include media-max(md){
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background: #fff;
+        padding: 10px 15px;
+    }
+}
+
+.mobile-filter-action {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: #fff;
+    box-shadow: 0 -1px 5px rgba(0,0,0,.05);
+
+    .filter-action {
+        display: flex;
+
+        &.sort-by {
+            width: 70%;
+        }
+        &.filter {
+            width: 30%;
+        }
+        &.border-right {
+            border-right: 1px solid #333;
+        }
+    } 
+}
+
+.sort-by-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;    
+    bottom: 100%;
+    z-index: -1;
+    background: #fff;
+    border-top: 3px solid #646464;
+    transform: translateY(100%);
+    transition: all 0.6s ease;
+
+    &.opened {
+        transform: translateY(0);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            text-align: center;
+            padding: 10px 0;            
+        }
+    }
+}
+
+.filter-btn {
+    padding: 0.75rem 0.625rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    background: #fff;
+    box-shadow: none !important;
+
+    &.res-filter-btn {
+        background: #f3d694;
+        color: #333;
+        font-size: 1rem;
+    }
 }

@@ -1,3 +1,7 @@
+@import "_custom_grid";
+@import "_inputs.scss";
+@import "_helper.scss";
+
 @import "header/_header";
 
 @import "_buttons";
@@ -32,10 +36,13 @@
 
 
 // Shop Page
-@import "sidebar/_sidebar.scss";
-@import "filters/_filters.scss";
-@import "filters/_range_slider.scss";
+@import "sidebar/_sidebar";
+@import "filters/_filters";
+@import "filters/_range_slider";
+@import "shop-page/_shop-page";
+@import "product/_price";
+@import "product/_badges";
 
 
 
-@import "misc";
+@import "_misc";

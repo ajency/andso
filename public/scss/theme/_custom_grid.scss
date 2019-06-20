@@ -1,0 +1,13 @@
+.col-xxl-2 {
+    @include media-min(xxl){
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+.col-xxl-10 {
+    @include media-min(xxl){
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+}

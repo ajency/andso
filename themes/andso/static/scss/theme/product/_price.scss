@@ -1,0 +1,11 @@
+.product {
+    &-price {
+        del {
+            opacity: 0.5;
+            margin-right: 10px;
+        }
+        ins {
+            text-decoration: none;            
+        }
+    }
+}

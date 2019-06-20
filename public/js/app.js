@@ -102,6 +102,24 @@ $(document).ready(function(){
 
     color_switcher();
 
+    $(document).on('click', '.res-sortby-btn', function(){
+        $('.sort-by-dropdown').toggleClass('opened');        
+    });
+
+    // Open close filter sibebar
+    $(document).on('click', '.res-filter-btn', function(){
+        $('.sidebar-filters').toggleClass('active');
+    });
+    $(document).on('click', '.close-menu-popup,.filter-products', function(){
+        $('.sidebar-filters').toggleClass('active');
+    });
+
+    //reset form
+    $(document).on('click', '.clear-filters', function(){
+        $('.filter-widget input[type=checkbox]').prop('checked',false);
+        console.log('go crazy');
+    });
+
 });
 
 $(window).scroll(function(){

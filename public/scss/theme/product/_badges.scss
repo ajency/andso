@@ -1,0 +1,36 @@
+.product {
+    &-badges {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+        li {
+            display: inline-block;
+            border-radius: 0;
+            padding: 6px 12px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #fff;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &.badge {
+                &-new {
+                    background: #fa7235
+                }
+                &-sale {
+                    background: #333;
+                }
+            }
+            @include media-max(sm){
+                font-size: 0.625rem;
+                padding: 4px 10px;
+            }
+        }
+    }
+}

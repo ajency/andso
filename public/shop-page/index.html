@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>  
-    <link href="https://ajency.github.io/andso/public/css/vendor/ion.rangeSlider.min.css" rel="stylesheet"><meta charset="utf-8">
+    <link href="https://ajency.github.io/andso/public/css/vendor/ion.rangeSlider.min.css" rel="stylesheet">
+    <link href="https://ajency.github.io/andso/public/css/vendor/animate.css" rel="stylesheet"><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>AND SO Store</title>
 
@@ -328,7 +329,7 @@
             
         
                         
-            <li><a href="https://ajency.github.io/andso/public/shop-page">shop-page</a></li>
+            <li><a href="https://ajency.github.io/andso/public/shop-page">shop page</a></li>
             
         
             
@@ -337,90 +338,188 @@
 </div>
 <div class="container-fluid container-spacing">
             <div class="row">
-                <div class="col-lg-3 col-xl-2"><div class="sidebar-filters">
-    <h4 class="sidebar-title">Filters</h4>
-    
-    <div class="accordian-row filter-widget">
-        <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__1" aria-expanded="true" aria-controls="collapse__1">
-            <h5 class="filter-title">Category</h5>
+                <div class="col-lg-3 col-xl-3 col-xxl-2"><div class="sidebar-filters">
+    <div class="sidebar-scrollable">
+
+        <div class="sidebar-top-section mb-3">
+            <div class="filter-action w-25 d-block d-lg-none">
+                <button type="button" class="btn clear-filters">Clear All</button>
+            </div>
+            <h4 class="sidebar-title w-50 mb-0">Filters</h4>
+            <div class="close-popup-wrap d-block d-lg-none w-25 text-right"> <button type="button" class="btn close-menu-popup"><i class="icon ion-md-close nav-icon"></i></button></div>
         </div>
-        <div class="accordian-content filters collapse show" id="collapse__1">
-            <ul>
-                <li>
-                    <input type="checkbox" id="seating" name="category">
-                    <label for="seating" class="filter-label"><span class="filter-text">Seating</span><span class="products-count">10</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="storage" name="category">
-                    <label for="storage" class="filter-label"><span class="filter-text">Storage</span><span class="products-count">5</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="tables" name="category">
-                    <label for="tables" class="filter-label"><span class="filter-text">Tables</span><span class="products-count">3</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="beds" name="category">
-                    <label for="beds" class="filter-label"><span class="filter-text">Beds</span><span class="products-count">0</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="lighting" name="category">
-                    <label for="lighting" class="filter-label"><span class="filter-text">Lighting</span><span class="products-count">20</span></label>
-                </li>
-            </ul>
+        
+        <div class="accordian-row filter-widget">
+            <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__1" aria-expanded="true" aria-controls="collapse__1">
+                <h5 class="filter-title">Category</h5>
+            </div>
+            <div class="accordian-content filters collapse show" id="collapse__1">
+                <ul class="custom-scrollbar">
+                    <li>
+                        <input type="checkbox" id="seating" name="category">
+                        <label for="seating" class="filter-label"><span class="filter-text">Seating</span><span class="products-count">10</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="storage" name="category">
+                        <label for="storage" class="filter-label"><span class="filter-text">Storage</span><span class="products-count">5</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="tables" name="category">
+                        <label for="tables" class="filter-label"><span class="filter-text">Tables</span><span class="products-count">3</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="beds" name="category">
+                        <label for="beds" class="filter-label"><span class="filter-text">Beds</span><span class="products-count">0</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="lighting" name="category">
+                        <label for="lighting" class="filter-label"><span class="filter-text">Lighting</span><span class="products-count">20</span></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+        <div class="accordian-row filter-widget">
+            <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__2" aria-expanded="true" aria-controls="collapse__2">
+                <h5 class="filter-title">Brands</h5>
+            </div>
+            <div class="accordian-content filters collapse show" id="collapse__2">
+                <ul class="custom-scrollbar">
+                    <li>
+                        <input type="checkbox" id="josmo" name="brands">
+                        <label for="josmo" class="filter-label"><span class="filter-text">Josmo</span><span class="products-count">3</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="the_lohasmith" name="brands">
+                        <label for="the_lohasmith" class="filter-label"><span class="filter-text">The Lohasmith</span><span class="products-count">8</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="studio_wood" name="brands">
+                        <label for="studio_wood" class="filter-label"><span class="filter-text">Studio wood</span><span class="products-count">5</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="twisty" name="brands">
+                        <label for="twisty" class="filter-label"><span class="filter-text">Twisty</span><span class="products-count">6</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="deniable_studio" name="brands">
+                        <label for="deniable_studio" class="filter-label"><span class="filter-text">Deniable Studio</span><span class="products-count">1</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="hush" name="brands">
+                        <label for="hush" class="filter-label"><span class="filter-text">Hush</span><span class="products-count">15</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="art_n_found" name="brands">
+                        <label for="arts_n_found" class="filter-label"><span class="filter-text">Art & Found</span><span class="products-count">16</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="botl" name="brands">
+                        <label for="botl" class="filter-label"><span class="filter-text">Botl</span><span class="products-count">20</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="wooden_story" name="brands">
+                        <label for="wooden_story" class="filter-label"><span class="filter-text">The Wooden Story</span><span class="products-count">20</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="kanchi" name="brands">
+                        <label for="kanchi" class="filter-label"><span class="filter-text">Kanchi</span><span class="products-count">20</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="loomshed" name="brands">
+                        <label for="loomshed" class="filter-label"><span class="filter-text">Loomshed</span><span class="products-count">18</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="kavya_creations" name="brands">
+                        <label for="kavya_creations" class="filter-label"><span class="filter-text">Kavya Creations</span><span class="products-count">5</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="terravida" name="brands">
+                        <label for="terravida" class="filter-label"><span class="filter-text">Terravida</span><span class="products-count">6</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="doo_art_studio" name="brands">
+                        <label for="doo_art_studio" class="filter-label"><span class="filter-text">Doo Art Studio</span><span class="products-count">16</span></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+        <div class="accordian-row filter-widget">
+            <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__6" aria-expanded="true" aria-controls="collapse__6">
+                <h5 class="filter-title">Size</h5>
+            </div>
+            <div class="accordian-content filters collapse show" id="collapse__6">
+                <ul class="custom-scrollbar">
+                        <ul >
+                    <li>
+                        <input type="checkbox" id="size_xl" name="size">
+                        <label for="size_xl" class="filter-label"><span class="filter-text">XL</span><span class="products-count">3</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size_l" name="size">
+                        <label for="size_l" class="filter-label"><span class="filter-text">L</span><span class="products-count">8</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size_m" name="size">
+                        <label for="size_m" class="filter-label"><span class="filter-text">M</span><span class="products-count">5</span></label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="size_s" name="size">
+                        <label for="size_s" class="filter-label"><span class="filter-text">S</span><span class="products-count">1</span></label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        
+        <div class="accordian-row filter-widget">
+            <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__7" aria-expanded="true" aria-controls="collapse__7">
+                <h5 class="filter-title">Price</h5>
+            </div>
+            <div class="accordian-content filters collapse show" id="collapse__7">
+                <div class="price-slider-wrapper">
+                    <input type="text" class="price-range-slider" name="price_range" value=""
+                        data-type="double"
+                        data-min="2000"
+                        data-max="500000"
+                        data-from="2000"
+                        data-to="500000"
+                        data-grid="false"
+                    />
+                </div>            
+            </div>
+        </div>
+        
+        <div class="sidebar-action mobile-sticky d-block d-lg-none">
+            <button type="button" class="btn btn-primary filter-products w-100">Show Products <span>200</span></button>
         </div>
     </div>
-    
-
-    
-    <div class="accordian-row filter-widget">
-        <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__2" aria-expanded="true" aria-controls="collapse__2">
-            <h5 class="filter-title">Size</h5>
-        </div>
-        <div class="accordian-content filters collapse show" id="collapse__2">
-            <ul>
-                <li>
-                    <input type="checkbox" id="size_xl" name="size">
-                    <label for="size_xl" class="filter-label"><span class="filter-text">XL</span><span class="products-count">3</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="size_l" name="size">
-                    <label for="size_l" class="filter-label"><span class="filter-text">L</span><span class="products-count">8</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="size_m" name="size">
-                    <label for="size_m" class="filter-label"><span class="filter-text">M</span><span class="products-count">5</span></label>
-                </li>
-                <li>
-                    <input type="checkbox" id="size_s" name="size">
-                    <label for="size_s" class="filter-label"><span class="filter-text">S</span><span class="products-count">1</span></label>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-
-    
-    <div class="accordian-row filter-widget">
-        <div class="accordian-heading" data-toggle="collapse" data-target="#collapse__3" aria-expanded="true" aria-controls="collapse__3">
-            <h5 class="filter-title">Price</h5>
-        </div>
-        <div class="accordian-content filters collapse show" id="collapse__3">
-            <div class="price-slider-wrapper">
-                <input type="text" class="price-range-slider" name="price_range" value=""
-                    data-type="double"
-                    data-min="2000"
-                    data-max="500000"
-                    data-from="2000"
-                    data-to="500000"
-                    data-grid="false"
-                />
-            </div>            
-        </div>
-    </div>
-    
-
 </div></div>
-                <div class="col-lg-9 col-xl-10">
+                <div class="col-lg-9 col-xl-9 col-xxl-10">
+                    <div class="row d-none d-lg-block">
+                        <div class="col-12">
+                            <div class="filter-top d-flex justify-content-end pb-5">
+                                <div class="d-flex flex-row filter-sortby select-border">
+                                    <div class="align-self-center">
+                                        <h6 class="m-0 f-w-4 sub-text"> Sort By:</h6>
+                                    </div>
+                                    <div class="pl-2 align-self-center">
+                                        <select class="size form-control form-control-sm br-0 custom">
+                                            <option>Recommended</option>
+                                            <option>Price Low to High</option>
+                                            <option>Price High to Low</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="product-listing">
                             <div class="product-loop-section">
@@ -428,7 +527,10 @@
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <ul class="product-badges">
+                <li class="badge-new">New</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-1.jpg" class="img-fluid">
             </a>
             
@@ -437,7 +539,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Bida Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">Bida Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -447,57 +549,12 @@
             </div>
         </div>
     </div>
-</li>           
+</li>  
+
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
-                <img src="https://ajency.github.io/andso/public/img/related-products/rp-2.jpg" class="img-fluid">
-            </a>
-            
-        </div>
-        <div class="item-content">
-            <div class="item-content-wrap">
-                <div class="item-content-top d-flex">
-                    <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Cooper Lounger</a></h5>
-                    </div>
-                    <div class="loop-fav-wrap">
-                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
-                    </div>
-                </div>
-                <div class="product-price">₹28,000</div>
-            </div>
-        </div>
-    </div>
-</li>           
-<li class="product product-loop">
-    <div class="item-wrap">
-        <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
-                <img src="https://ajency.github.io/andso/public/img/related-products/rp-3.jpg" class="img-fluid">
-            </a>
-            
-        </div>
-        <div class="item-content">
-            <div class="item-content-wrap">
-                <div class="item-content-top d-flex">
-                    <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Havana Lounger</a></h5>
-                    </div>
-                    <div class="loop-fav-wrap">
-                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
-                    </div>
-                </div>
-                <div class="product-price">₹45,000</div>
-            </div>
-        </div>
-    </div>
-</li>           
-<li class="product product-loop">
-    <div class="item-wrap">
-        <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-4.jpg" class="img-fluid">
             </a>
             
@@ -506,7 +563,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Lima Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">Lima Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -516,11 +573,65 @@
             </div>
         </div>
     </div>
-</li>           
+</li> 
+         
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <ul class="product-badges">
+                <li class="badge-new">New</li>
+                <li class="badge-sale">Sale!</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/hula-v-by-josmo-studio/" class="product-link" target="_blank">
+                <img src="https://ajency.github.io/andso/public/img/related-products/rp-3.jpg" class="img-fluid">
+            </a>
+            
+        </div>
+        <div class="item-content">
+            <div class="item-content-wrap">
+                <div class="item-content-top d-flex">
+                    <div class="loop-title-wrap flex-fill">
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/hula-v-by-josmo-studio/" class="product-link" target="_blank">Havana Lounger</a></h5>
+                    </div>
+                    <div class="loop-fav-wrap">
+                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                    </div>
+                </div>
+                <div class="product-price"><del>₹45,000</del><ins>₹43,000</ins></div>
+            </div>
+        </div>
+    </div>
+</li>  
+<li class="product product-loop">
+    <div class="item-wrap">
+        <div class="item-img products-thumb">
+            <ul class="product-badges">
+                <li class="badge-sale">Sale!</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">
+                <img src="https://ajency.github.io/andso/public/img/related-products/rp-2.jpg" class="img-fluid">
+            </a>
+            
+        </div>
+        <div class="item-content">
+            <div class="item-content-wrap">
+                <div class="item-content-top d-flex">
+                    <div class="loop-title-wrap flex-fill">
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">Cooper Lounger</a></h5>
+                    </div>
+                    <div class="loop-fav-wrap">
+                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                    </div>
+                </div>
+                <div class="product-price"><del>₹28,000</del><ins>₹26,999</ins></div>
+            </div>
+        </div>
+    </div>
+</li>          
+<li class="product product-loop">
+    <div class="item-wrap">
+        <div class="item-img products-thumb">
+            <a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-5.jpg" class="img-fluid">
             </a>
             
@@ -529,7 +640,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Tea Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">Tea Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -543,7 +654,10 @@
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <ul class="product-badges">
+                <li class="badge-new">New</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-1.jpg" class="img-fluid">
             </a>
             
@@ -552,7 +666,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Bida Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">Bida Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -562,57 +676,12 @@
             </div>
         </div>
     </div>
-</li>           
+</li>  
+
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
-                <img src="https://ajency.github.io/andso/public/img/related-products/rp-2.jpg" class="img-fluid">
-            </a>
-            
-        </div>
-        <div class="item-content">
-            <div class="item-content-wrap">
-                <div class="item-content-top d-flex">
-                    <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Cooper Lounger</a></h5>
-                    </div>
-                    <div class="loop-fav-wrap">
-                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
-                    </div>
-                </div>
-                <div class="product-price">₹28,000</div>
-            </div>
-        </div>
-    </div>
-</li>           
-<li class="product product-loop">
-    <div class="item-wrap">
-        <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
-                <img src="https://ajency.github.io/andso/public/img/related-products/rp-3.jpg" class="img-fluid">
-            </a>
-            
-        </div>
-        <div class="item-content">
-            <div class="item-content-wrap">
-                <div class="item-content-top d-flex">
-                    <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Havana Lounger</a></h5>
-                    </div>
-                    <div class="loop-fav-wrap">
-                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
-                    </div>
-                </div>
-                <div class="product-price">₹45,000</div>
-            </div>
-        </div>
-    </div>
-</li>           
-<li class="product product-loop">
-    <div class="item-wrap">
-        <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-4.jpg" class="img-fluid">
             </a>
             
@@ -621,7 +690,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Lima Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">Lima Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -631,11 +700,65 @@
             </div>
         </div>
     </div>
-</li>           
+</li> 
+         
 <li class="product product-loop">
     <div class="item-wrap">
         <div class="item-img products-thumb">
-            <a href="#" class="product-link" target="_blank">
+            <ul class="product-badges">
+                <li class="badge-new">New</li>
+                <li class="badge-sale">Sale!</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/hula-v-by-josmo-studio/" class="product-link" target="_blank">
+                <img src="https://ajency.github.io/andso/public/img/related-products/rp-3.jpg" class="img-fluid">
+            </a>
+            
+        </div>
+        <div class="item-content">
+            <div class="item-content-wrap">
+                <div class="item-content-top d-flex">
+                    <div class="loop-title-wrap flex-fill">
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/hula-v-by-josmo-studio/" class="product-link" target="_blank">Havana Lounger</a></h5>
+                    </div>
+                    <div class="loop-fav-wrap">
+                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                    </div>
+                </div>
+                <div class="product-price"><del>₹45,000</del><ins>₹43,000</ins></div>
+            </div>
+        </div>
+    </div>
+</li>  
+<li class="product product-loop">
+    <div class="item-wrap">
+        <div class="item-img products-thumb">
+            <ul class="product-badges">
+                <li class="badge-sale">Sale!</li>
+            </ul>
+            <a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">
+                <img src="https://ajency.github.io/andso/public/img/related-products/rp-2.jpg" class="img-fluid">
+            </a>
+            
+        </div>
+        <div class="item-content">
+            <div class="item-content-wrap">
+                <div class="item-content-top d-flex">
+                    <div class="loop-title-wrap flex-fill">
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" class="product-link" target="_blank">Cooper Lounger</a></h5>
+                    </div>
+                    <div class="loop-fav-wrap">
+                        <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                    </div>
+                </div>
+                <div class="product-price"><del>₹28,000</del><ins>₹26,999</ins></div>
+            </div>
+        </div>
+    </div>
+</li>          
+<li class="product product-loop">
+    <div class="item-wrap">
+        <div class="item-img products-thumb">
+            <a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">
                 <img src="https://ajency.github.io/andso/public/img/related-products/rp-5.jpg" class="img-fluid">
             </a>
             
@@ -644,7 +767,7 @@
             <div class="item-content-wrap">
                 <div class="item-content-top d-flex">
                     <div class="loop-title-wrap flex-fill">
-                        <h5 class="loop-product-title"><a href="#" class="product-link" target="_blank">Tea Lounger</a></h5>
+                        <h5 class="loop-product-title"><a href="https://ajency.github.io/andso/public/product/cooper-by-josmo-studio-2/" class="product-link" target="_blank">Tea Lounger</a></h5>
                     </div>
                     <div class="loop-fav-wrap">
                         <button class="btn loop-add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
@@ -659,6 +782,22 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div> 
+        
+        <div class="mobile-filter-action bottom-sticky d-flex">
+            <div class="filter-action sort-by text-center border-right">
+                <button type="button" class="btn filter-btn res-sortby-btn w-100">Sort By <i class="icon ion-md-arrow-dropup nav-icon"></i></button>
+                <div class="sort-by-dropdown">
+                    <ul>
+                        <li>Recommended</li>
+                        <li>Price Low to High</li>
+                        <li>Price High to Low</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter-action filter text-center">
+                <button type="button" class="btn filter-btn res-filter-btn w-100"><i class="fas fa-filter"></i></button>
             </div>
         </div><footer class="footer" id="footer">
 	<div class="container-fluid container-spacing">
@@ -683,12 +822,13 @@
 
 		
 		<div class="row contact-block">
-			<div class="col-lg-4 col-md-12 col-sm-12 info-block">
+			<div class="col-lg-4 col-md-12 col-sm-12 info-block order-1 order-lg-0">
+				<hr class="seperator d-block d-lg-none">
 				<div class="request-block">
 					<p class="text-white request-text">Choose from our wide range of beautifully crafted products and turn your home into a modern, stylish space!</p>
 					<a href="#" class="btn request-btn">request a catalog </a>
 				</div>
-				<hr class="seperator">
+				<hr class="seperator d-none d-lg-block">
 				<div class="social-info mt-4 d-none d-lg-block">
 					<h6 class="ft-section-title"> Keep In Touch</h6>
 					<ul class="social-links">
@@ -700,7 +840,7 @@
 			</div>
 
 			
-			<div class="col-lg-4 col-md-12 col-sm-12 info-block order-2 order-md-2">
+			<div class="col-lg-4 col-md-12 col-sm-12 info-block order-2 order-lg-2">
 				<div class="customer-care">
 					<div class="cc-info-box mb-4">
 						<h6 class="ft-section-title"> Customer Care </h6>
@@ -721,7 +861,7 @@
 			</div>
 
 			
-			<div class="col-lg-4 col-md-12 col-sm-12 form-block d-flex align-items-center order-1 order-md-3">
+			<div class="col-lg-4 col-md-12 col-sm-12 form-block d-flex align-items-center order-0 order-lg-3">
 				<div class="footer-form w-100 mt-4 mb-4">
 					<h6 class="ft-section-title">Join the AND SO Family</h6>
 					<p class="ft-section-sub-title">Stay connected and we will update you on our latest brands and offers</p>

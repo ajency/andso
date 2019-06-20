@@ -4,7 +4,7 @@
         <li><a href="#">Home</a></li>
         {{ range $index, $element := split $url "/" }}
             {{ if ne $element "" }}            
-            <li><a href="{{ . | absURL }}">{{ . }}</a></li>
+            <li><a href="{{ . | absURL }}">{{replaceRE "-" " " . }}</a></li>
             {{ end }}
         {{ end }}
     </ul>
