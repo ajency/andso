@@ -34,13 +34,13 @@
                 padding-right: 10px;
                 margin-bottom: 3px;
                 a {
-                    font-size: 1rem;
+                    font-size: 1.125rem;
                     font-weight: 600;
                     color: #333;
                     text-decoration: none;
                     outline: 0;
                     @include media-max(md){
-                        font-size: 0.875rem;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -79,6 +79,15 @@
         }
     }
 }
+
+.product {
+    &-brand {
+        font-size: 0.75rem;
+        padding-left: 6px;
+        border-left: 3px solid theme-color('primary');
+        margin-bottom: 5px;
+    }
+}   
 
 .loop-add-to-fav {
     padding: 0;

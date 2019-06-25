@@ -147,7 +147,7 @@ function init_product_gallery(){
             h: $link.data('height'),
             title: $link.data('caption')
         };
-        container.push(item);
+        container.push(item); 
     });
 
     // Define click event on gallery item
@@ -163,7 +163,6 @@ function init_product_gallery(){
             bgOpacity: 0.85,
             showHideOpacity: true,
             closeOnScroll: false,
-            maxSpreadZoom: 10,
         };
 
         // Initialize PhotoSwipe

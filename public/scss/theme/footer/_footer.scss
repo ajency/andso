@@ -5,7 +5,7 @@
         letter-spacing: 1px;
         font-size: .875rem;
         font-weight: 500;
-        margin-bottom: 0.1875rem;
+        margin-bottom: 0.625rem;
 
         @include media-max(md){
             text-align: center;
@@ -42,7 +42,7 @@
     }
     .footer-sticky-bg {
         position: absolute;
-        bottom: 20px;
+        top: 25px;
         z-index: 1;
         width: 100%;
         height: auto;

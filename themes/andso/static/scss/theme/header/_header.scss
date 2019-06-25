@@ -179,6 +179,15 @@ body {
                 }
             }
         }
+        @include media-min(md){
+            display: flex;
+            justify-content: space-between;
+            float: none !important;
+        }
+        @media(min-width: 1550px){
+            width: 88%;    
+            margin-left: auto;        
+        }
     } 
     .highlight-menu-item {
         &.item-pink {
@@ -351,6 +360,7 @@ body {
 
 .nav-icon {
     font-size: 1.25rem;
+    vertical-align: middle;
     @include media-max(md) {
         font-size: 1.1rem;
     }

@@ -7,4 +7,9 @@
     text-transform: uppercase;
     font-size: 14px;
     padding: 11px 5px;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
 }

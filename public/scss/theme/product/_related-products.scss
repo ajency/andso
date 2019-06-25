@@ -7,14 +7,10 @@
         text-transform: uppercase;
         font-weight: 600;
         display: inline-block;
-
-        &::after {
-            content: "";
-            height: 5px;
-            width: 100%;
-            display: block;
-            margin-top: 4px;
-            border-top: 4px double #fdc3aa;
-        }
+        margin-bottom: 0;
+    }
+    ul.products {
+        padding-left: 55px;
+        padding-right: 55px;
     }
 }
