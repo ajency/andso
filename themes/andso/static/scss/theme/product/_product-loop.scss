@@ -120,6 +120,8 @@
     padding: 9px 10px;
     box-shadow: none !important;
     outline: 0;
+    display: block;
+    width: 100%;
 
     &:hover {
         background: theme-color('primary');
