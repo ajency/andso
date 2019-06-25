@@ -7,7 +7,6 @@
 		}
 	}
 	.request-block {
-		padding: 0.5rem 0;
 		.request-btn {
 			font-size: 0.875rem;
 			font-weight: 700;
@@ -53,12 +52,12 @@
 }
 
 .customer-care {
-	margin-top: 8px;
 	.cc-info-box {
 		p {
 			margin-bottom: 0;
 			font-size: .875rem;
 			color: theme-color('linen');
+			line-height: normal;
 		}
 	}
 	@include media-max(md){
