@@ -123,6 +123,12 @@ $(document).ready(function(){
         price_slider.reset();
     });
 
+    $('#loop-product-quickview').on('show.bs.modal', function (event) {
+        setTimeout(function(){
+            loop_quick_view_gallery();
+        },250);        
+    });
+
 });
 
 $(window).scroll(function(){
@@ -179,5 +185,14 @@ function color_switcher(){
     $('input[name="color"]').on('change', function(){
         var colorname = $(this).data('colorname');        
         $('.color-val').text(colorname);
+    });
+}
+
+function loop_quick_view_gallery(){
+    $('.quick-view-gallery').slick({
+        arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
     });
 }
