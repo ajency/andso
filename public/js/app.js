@@ -137,6 +137,7 @@ $(window).scroll(function(){
 function init_product_gallery(){
     // Init empty gallery array
     var container = [];
+    var gallery;
 
     // Loop over gallery items and push it to the array
     $('#gallery').find('figure').each(function() {
@@ -166,9 +167,11 @@ function init_product_gallery(){
         };
 
         // Initialize PhotoSwipe
-        var gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
+        gallery = new PhotoSwipe($pswp, PhotoSwipeUI_Default, container, options);
         gallery.init();
-    });
+      });
+
+      var gallery
 }
 
 function color_switcher(){

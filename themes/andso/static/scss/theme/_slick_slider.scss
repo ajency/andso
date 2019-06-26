@@ -51,6 +51,9 @@
                     border-color: #fff;
                 }
             }
+            &.slick-disabled {
+                opacity: 0;
+            }
         }
     }
 }

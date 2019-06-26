@@ -518,3 +518,33 @@ body {
         }
     }
 }
+
+.mm-artwork-bg {
+    @include media-min(md){
+        position: relative;
+        background-image: url('../img/shapes/dots_artwork.svg');
+        background-repeat: no-repeat;
+        background-position: 0 50%;
+    }
+}
+.menu-item-image {
+    position: relative;
+    z-index: 2;
+}
+.menu-bg-artwork {
+    #top_right {
+        top: 55px;
+        position: absolute;
+        right: -10%;
+        width: 60%;
+        transform: rotate(-80deg);
+        z-index: -1;
+    }
+    #bottom_left {
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        right: 85%;
+        z-index: -1;
+    }
+}
