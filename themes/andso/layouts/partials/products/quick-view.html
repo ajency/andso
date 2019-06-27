@@ -1,15 +1,19 @@
 <!-- Modal -->
-<div class="modal fade" id="loop-product-quickview" tabindex="-1" role="dialog" aria-labelledby="loop-product-quickview" aria-hidden="true">
+<div class="modal fade product-quick-view-modal" id="loop-product-quickview" tabindex="-1" role="dialog" aria-labelledby="loop-product-quickview" aria-hidden="true">
     <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
+            <div class="quick-view-nav d-none">
+                <button type="button" class="qv-prev qv-nav"><i class="arrow__left"></i></button>
+                <button type="button" class="qv-next qv-nav"><i class="arrow__right"></i></button>
+            </div>
             <div class="modal-body">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <i class="icon ion-md-close nav-icon"></i>
                 </button>
                 <div class="product-quick-view">
                     <div class="container-fluid pl-0 pr-0">
                         <div class="row">
-                            <div class="col-6 col-md-6 sp-col-left">
+                            <div class="col-12 col-lg-6 sp-col-left">
                                 <ul class="quick-view-gallery">
                                     <li class="qv-gallery-img">
                                         <img src="{{"img/ps-potrait_1.jpg" | absURL}}" class="img-fluid">
@@ -19,7 +23,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="col-6 col-md-6 sp-col-right">
+                            <div class="col-12 col-lg-6 sp-col-right">
                                 <div class="product-summary pb-5">
                                     <h1 class="product-title">BAWA LOUNGER</h1>
                                     <div class="product-brand">By <a href="#" target="_self">Josmo</a></div>
@@ -87,6 +91,9 @@
                                         </div>
                                     </div>
 
+                                    <div class="view-product mt-4 mb-3">
+                                        <a class="view-product--link" href="{{$.Site.BaseURL}}product/bawa-by-josmo-studio/" target="_blank">View Product Details</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

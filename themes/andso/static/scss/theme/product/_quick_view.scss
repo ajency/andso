@@ -3,3 +3,118 @@
     padding-left: 0;
     margin: 0;
 }
+
+.product-quick-view-modal {
+    .modal-body {
+        padding: 2rem 2.5rem;
+        .close {
+            position: absolute;
+            right: 15px;
+            z-index: 1;
+            top: 10px;
+            outline: 0;
+            
+            .nav-icon {
+                font-size: 2rem;
+            }
+        }        
+        
+        @include media-max(md){    
+            padding: 2rem 1.25rem;        
+            .close {
+                right: 10px;
+                top: 4px;
+            }
+        }
+    }
+
+    .modal-dialog {
+        @include media-min(xl){        
+            max-width: 70%;
+        }
+        @include media-max(xl){        
+            max-width: 80%;
+        }
+    }
+
+    @include media-max(md) {
+        .product {
+            &-title {
+                font-size: 1.25rem;
+            }
+            &-brand {
+                font-size: 0.875rem;
+            }
+            &-summary {
+                .price {
+                    font-size: 1.25rem;
+                }
+            }
+            &-varition {                
+                .varition-list {
+                    ul {
+                        li {
+                            label {
+                                .color {
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .varition-size {
+                    .varition-list {
+                        ul {
+                            li {
+                                label {
+                                    min-width: 65px;
+                                    padding: 3px 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.view-product {
+    &--link {
+        text-decoration: none;
+        padding-bottom: 1px;
+        border-bottom: 1px solid theme-color('dark');
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        color: theme-color('dark');
+        outline: 0;
+        &:hover {
+            text-decoration: none;
+            border-bottom: 1px solid theme-color('primary');
+        }
+    }
+}
+
+.quick-view {
+    &-nav {        
+        .qv {
+            &-nav {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                z-index: -1;
+                background: transparent;
+                border: 0;
+                border-radius: 0;
+                outline: 0;
+            }
+            &-prev {
+                left: -5%;
+            }
+            &-next {
+                right: -5%;
+            }
+        }        
+    }
+}

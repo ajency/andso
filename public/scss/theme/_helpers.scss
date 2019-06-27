@@ -59,3 +59,24 @@ select.custom {
     background-repeat: repeat-y;
     background-position: 0 -20%;
 }
+
+.arrow {
+    &__left {
+        width: 30px;
+        height: 30px;
+        display: block;
+        border: 3px solid #fff;
+        border-right: 0;
+        border-top: 0;
+        transform: rotate(45deg);
+    }
+    &__right {
+        width: 30px;
+        height: 30px;
+        display: block;
+        border: 3px solid #fff;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+    }
+}
