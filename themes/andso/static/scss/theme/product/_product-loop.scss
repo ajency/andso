@@ -14,6 +14,7 @@
             padding: 0 15px 20px;
             .item-img {
                 position: relative;
+                padding-top: 30px;
             }
 
             @include media-max(sm){
@@ -123,6 +124,7 @@
     display: block;
     width: 100%;
     line-height: normal;
+    height: 40px;
 
     &:hover {
         background: theme-color('primary');
