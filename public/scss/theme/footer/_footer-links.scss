@@ -1,15 +1,13 @@
 .footer_nav_links{
 	margin-bottom: 2rem;
 	text-align: center;
-	ul {
+	ul { 
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 		li {			
 			margin: 3px 0;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			li {
-				border-right: 1px solid #646464;
-			}
+			border-right: 1px solid #646464;
 			&:last-child {
 				border-right: 0;
 			}

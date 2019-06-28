@@ -60,6 +60,19 @@
 			line-height: normal;
 		}
 	}
+	.cc-details {
+		.ft-text {
+			position: relative;
+			padding-left: 26px;
+			margin-bottom: 8px;
+
+			.icon {
+				position: absolute;
+				left: 0;
+				top: -3px;
+			}
+		}
+	}
 	@include media-max(md){
 		text-align: center;
 	}
