@@ -39,3 +39,12 @@ body {
     outline: 0;
   }
 }
+
+.nav {
+  &-icon {
+    &.fa-map-marker-alt {
+      font-size: 1.125rem;
+      margin-top: -4px;
+    }
+  }
+}

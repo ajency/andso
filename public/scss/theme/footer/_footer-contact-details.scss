@@ -65,11 +65,13 @@
 			position: relative;
 			padding-left: 26px;
 			margin-bottom: 8px;
-
-			.icon {
-				position: absolute;
-				left: 0;
-				top: -3px;
+			
+			@include media-min(md){
+				.icon {
+					position: absolute;
+					left: 0;
+					top: -3px;
+				}
 			}
 		}
 	}
