@@ -1,0 +1,142 @@
+.banner {
+    margin-bottom: 3.125rem;
+    .banner-inner {
+        position: relative;
+        .banner-item {
+            position: relative;
+            a{
+                outline: 0;
+                text-decoration: none;
+                .banner-btn {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-decoration: none;
+                }
+            }
+        }
+        .slick-dots {
+            position: absolute;
+            bottom: 0;
+            left: auto;
+            right:20px;
+        }
+    }
+}
+
+.brands-section {
+    margin-bottom: 3.125rem;
+    h5 {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .brand-inner-wrap {
+        .brand-logo {
+            a {
+                text-decoration: none;
+                outline: 0;
+                img { 
+                    padding: 1.875rem;
+                }
+            }
+        }
+    }
+}
+
+.best-seller-category-section, .accessories-section {
+    text-align: center;
+    margin-bottom: 3.125rem;
+    .category-wrapper {
+        margin-bottom: 20px;
+        .category-image {
+            margin-bottom: 15px;
+        }
+        .category-title {
+            margin-bottom: 5px;
+            a {
+                text-transform: uppercase;
+                color: theme-color('dark');
+                text-decoration: none;
+                outline: 0;
+                font-weight: 700;
+            }
+        }
+        .category-product-count {
+            a {
+                text-decoration: none;
+                outline: 0;
+                font-size: 0.875rem;
+            }
+        }
+    }
+
+    .category-slider {
+        .slick-list{
+            @include media-max(sm) {
+                padding-left: 0!important;
+            }
+        }
+        button.slick-prev {
+            @include media-min(md) {
+                left: -45px;
+            }
+        }
+        button.slick-next {
+            @include media-min(md) {
+                right: -45px;
+            }
+        }
+        .category-wrapper {
+            img{
+                padding: 0 10px;
+            }
+        }
+        @include media-min(md) {
+            margin: 0 -12px;
+        }
+    }
+}
+
+.visit-store-section {
+    background: theme-color('primary');
+    padding: 30px;
+    margin-bottom: 3.125rem;
+    a{
+        color: #000;
+        text-decoration: none;
+        .f-row {
+            align-items: center;
+        }
+    }
+    
+    .store-img {
+        @include media-max(sm) {
+            margin-bottom: 30px;
+        }
+    }
+    .store-details {
+        text-align: center;
+        padding: 0 30px;
+        .intro {
+            font-size: 0.875rem
+        }
+        .h-line {
+            width: 75px;
+            border-top: 3px solid #000;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .store-address {
+            h4{
+                margin: 0;
+                font-size: 1.125rem;
+                line-height: 22px;
+            }
+        }
+    }
+}
+
+.curations-section {
+    margin-bottom: 3.125rem;
+}

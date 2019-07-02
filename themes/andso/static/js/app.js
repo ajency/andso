@@ -129,6 +129,68 @@ $(document).ready(function(){
         },250);        
     });
 
+    $(".banner-inner").slick({
+        infinite: false,
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+    });
+
+    $(".brand-inner-wrap").slick({
+        infinite: false,
+        arrows: false,
+        dots: false,
+        slidesToShow: 7,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 3,
+            }
+    
+        }, {    
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 2,
+            },                        
+        }, {    
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+            }                       
+        }]
+    });
+
+    $(".category-slider").slick({
+        infinite: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 3,
+            }
+        }, {    
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                centerPadding: '10px',
+                arrows: false,
+            },                        
+        }, {    
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                centerPadding: '35px',
+                arrows: false,
+            }                       
+        }]
+    });
+
 });
 
 $(window).scroll(function(){

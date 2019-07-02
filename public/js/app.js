@@ -129,6 +129,13 @@ $(document).ready(function(){
         },250);        
     });
 
+    $(".banner-inner").slick({
+        infinite: false,
+        arrows: true,
+        dots: true,
+        slidesToShow: 1,
+    }); 
+
 });
 
 $(window).scroll(function(){

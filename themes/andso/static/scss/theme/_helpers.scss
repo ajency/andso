@@ -80,3 +80,17 @@ select.custom {
         transform: rotate(45deg);
     }
 }
+
+.c-p-10 {
+    @include media-min(md) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.c-m-10 {
+    @include media-min(md) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
