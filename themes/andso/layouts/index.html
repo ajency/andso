@@ -10,38 +10,62 @@
                     <div class="banner-inner">
                         <div class="banner-item">
                             <a href="#">
-                                <img class="img-fluid" src="{{"img/banner/Poolside.jpg" | absURL}}" alt="banner-image">
-                                <button type="button" class="btn btn-primary banner-btn">Shop now</button>
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{{"img/banner/Poolside.jpg" | absURL}}">
+                                    <source media="(max-width: 767px)" srcset="{{"img/banner/Poolside-Mobile.jpg" | absURL}}">
+                                    <img src="{{"img/banner/Poolside.jpg" | absURL}}" alt="Flowers" class="img-fluid">
+                                </picture>
                             </a>
                         </div>
                         <div class="banner-item">
                             <a href="#">
-                                <img class="img-fluid" src="{{"img/banner/Banner-April1.jpg" | absURL}}" alt="banner-image">
-                                <button type="button" class="btn btn-primary banner-btn">Shop now</button>
-                            </a>
-                        </div>
-                        <div class="banner-item">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/banner/April-Banner-2.jpg" | absURL}}" alt="banner-image">
-                                <button type="button" class="btn btn-primary banner-btn">Shop now</button>                                
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{{"img/banner/April-Banner-2.jpg" | absURL}}">
+                                    <source media="(max-width: 767px)" srcset="{{"img/banner/Vday-mobile-banner_2.jpg" | absURL}}">
+                                    <img src="{{"img/banner/April-Banner-2.jpg" | absURL}}" alt="Flowers" class="img-fluid">
+                                </picture>                               
                             </a>
                         </div>
                     </div>
                 </div>
+                <div class="discover-section">
+                    <h4 class="section-title text-uppercase">Discover</h4> 
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#new">New</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#featured">Featured</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#bestsellers">Bestsellers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#liveedge">Liveedge</a>
+                        </li>
+                    </ul>
+        
+                    <div class="tab-content">
+                        <div class="tab-pane container active" id="new">11</div>
+                        <div class="tab-pane container fade" id="featured">22</div>
+                        <div class="tab-pane container fade" id="bestsellers">33</div>
+                        <div class="tab-pane container fade" id="liveedge">33</div>
+                    </div>
+                </div>
 
                 <div class="best-seller-category-section">
-                    <h5>Best seller</h5>    
-                    <div class="row c-m-10">
-                        <div class="col-sm-6 c-p-10">
+                    <h4 class="section-title text-uppercase">Explore furniture</h4>    
+                    <div class="row">
+                        <div class="col-sm-6">
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/banner/Magazine-racks.png" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/Look-8_updated-1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Sofas
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -51,16 +75,16 @@
                                 </div>  
                             </div> 
                         </div>
-                        <div class="col-sm-6 c-p-10">
+                        <div class="col-sm-6">
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/banner/Laundry-baskets.png" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/slider1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Tables
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -81,7 +105,7 @@
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Loungers
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -98,7 +122,7 @@
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Consoles
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -115,7 +139,7 @@
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Beds
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -132,7 +156,7 @@
                                     </div>
                                 <div class="category-title">
                                     <a href="#">
-                                        Category one
+                                        Chairs
                                     </a>
                                 </div> 
                                 <div class="category-product-count">
@@ -177,205 +201,182 @@
                             </div> 
                         </div>    
                     </div> 
+                </div>       
+                
+                <div class="curations-section">
+                    <h4 class="section-title text-uppercase">Curations</h4>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="{{"img/curations/Banner.jpg" | absURL}}">
+                        <source media="(max-width: 767px)" srcset="{{"img/curations/c_one.jpg" | absURL}}">
+                        <img src="{{"img/curations/Banner.jpg" | absURL}}" alt="Curations banner" class="img-fluid">
+                    </picture>
                 </div>
 
-                <div class="accessories-section">
-                    <h5>What makes your house a home</h5>
-                    <div class="1">
-                        <div class="category-slider">
-                            <div class="category-wrapper">
-                                <div class="category-image">
+                <div class="explore-categories">
+                    <h4 class="section-title text-uppercase">Home decor</h4>
+                    <div class="explore-wrap">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/category/IMG_8892-2-02.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/tableware.png" | absURL}}" alt="Tableware" class="img-fluid">
+                                        <div class="category-name">
+                                            <h5>Tableware</h5>
+                                        </div>
                                     </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/IMG_8892-2-02.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/rayden-tabletop-2910.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div> 
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/RAY-BSK-FPL-GRY-02-large.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/IP-CityGrad-A5-Jodhpur-01-1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/FYR-L2-DBL-01-02.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div> 
-                        </div>    
-                    </div> 
-                </div>
-
-                <!--><div class="curations-section">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="left-col">
-                                <img src="{{"img/left-banner-img.jpg" | absURL}}" class="img-fluid" alt="image">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="right-col">
-                            
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
-                
-                <div class="brands-section">
-                    <h5>Featured brands</h5>
-                    <div class="brand-inner-wrap">
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/loomshed.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/terravida.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/kavya.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/dooart.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/botl.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/hush.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/josmo-pic.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                        <div class="brand-logo">
-                            <a href="#">
-                                <img class="img-fluid" src="{{"img/brands/loomshed.png" | absURL}}" alt="brand-img">
-                            </a>    
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="visit-store-section">
-                    <a href="">
-                        <div class="row f-row">
-                            <div class="col-md-6">
-                                <div class="store-img">
-                                    <img src="{{"img/pfa.jpg" | absURL}}" class="img-fluid" alt="store-image">
-                                </div>    
-                            </div>
-                            <div class="col-md-6">
-                                <div class="store-details">
-                                    <div class="intro">
-                                        And So is a store that houses a collaborative environment to promote artisanal crafted products with their own modern twist. 
-                                        A Collective of designers, artists, storytellers and thinkers that create and curate unique pieces for your everyday life.
-                                    </div>
-                                    <hr class="h-line">
-                                    <div class="store-address">
-                                        <h4>AND SO Store,</h4>
-                                        <h4>H. No. 850, F.C. Goa House,</h4>
-                                        <h4>Off N.H.66, Porvorim,</h4>
-                                        <h4>Goa - 403521</h4>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="single-category">
+                                    <a href="#">
+                                        <img src="{{"img/explore/study.png" | absURL}}" alt="Study" class="img-fluid">
+                                        <div class="category-name">
+                                            <h5>Lighting</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="single-category">
+                                    <a href="#">
+                                        <img src="{{"img/explore/tables.png" | absURL}}" alt="Tables" class="img-fluid">
+                                        <div class="category-name">
+                                            <h5>Tables</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-category">
+                                    <a href="#">
+                                        <img src="{{"img/explore/dining.png" | absURL}}" alt="Dining" class="img-fluid">
+                                        <div class="category-name">
+                                            <h5>Dining</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="single-category">
+                                    <a href="#">
+                                        <img src="{{"img/explore/carpet.png" | absURL}}" alt="Carpets" class="img-fluid">
+                                        <div class="category-name">
+                                            <h5>Carpets</h5>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="visit-store-section">
+                    <a href="#">
+                        <div class="store-img">
+                            <img src="{{"img/pfa.jpg" | absURL}}" class="img-fluid" alt="store-image">
+                            <div class="store-details">
+                                <div class="intro">
+                                    And So is a store that houses a collaborative environment to promote artisanal crafted products with their own modern twist. 
+                                    A Collective of designers, artists, storytellers and thinkers that create and curate unique pieces for your everyday life.
+                                </div>
+                                <hr class="h-line">
+                                <div class="store-address">
+                                    <h4>AND SO Store,</h4>
+                                    <h4>H. No. 850, F.C. Goa House,</h4>
+                                    <h4>Off N.H.66, Porvorim,</h4>
+                                    <h4>Goa - 403521</h4>
+                                </div>
                             </div>
                         </div>
                     </a>
+                </div>
+
+                <div class="brands-section">
+                    <a href=""><img src="{{"img/brands.jpg" | absURL}}" class="img-fluid" alt="brands"></a>
+                </div>
+
+                <div class="testimonails-section">
+                    <h4 class="section-title text-uppercase">Client testimonials</h4>
+                    <div class="testimoails-wrap">
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <img src="{{"img/testimonials/Anish-Sood.jpg" | absURL}}" class="img-fluid" alt="Anish Sood">
+                                <div class="testimonial-text">
+                                    <div class="testimonial-inner">
+                                        <p>We absolutely love our Prance dining table! It was one of the first pieces of furniture we picked for our new home and it adds such a unique rustic touch to the space. Delivery and installation was also perfect - Many thanks to Anjali, Tony and the AndSo team!</p>    
+                                        <a href="#">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-data">
+                                <div class="client-name">
+                                    Anish Sood
+                                </div>
+                                <div class="client-city">
+                                    Mumbai
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <img src="{{"img/testimonials/Shobhan-Kothgari-1.jpg" | absURL}}" class="img-fluid" alt="Anish Sood">
+                                <div class="testimonial-text">
+                                    <div class="testimonial-inner">
+                                        <p>The experience of working with and so and Anjali has been a delightful and seamless experience. The bespoke products and their quality are a joy to use and I find myself now a proud owner of their product.</p>    
+                                        <a href="#">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-data">
+                                <div class="client-name">
+                                    Shobhan Kothari
+                                </div>
+                                <div class="client-city">
+                                    Mumbai
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <img src="{{"img/testimonials/testimonial-cooper-sofa-an.jpg" | absURL}}" class="img-fluid" alt="Anish Sood">
+                                <div class="testimonial-text">
+                                    <div class="testimonial-inner">
+                                        <p>Absolutely loved the decor I bought from the And So store. They’re lovely accents to the dining table and bar, respectively.  The vase allows me to change the look of the table setting every time I entertain! I loved the store and the entire shopping experience. Tastefully curated!</p>    
+                                        <a href="#">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-data">
+                                <div class="client-name">
+                                    Anushka Sani
+                                </div>
+                                <div class="client-city">
+                                    Mumbai
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="single-testimonial">
+                            <div class="testimonial-img">
+                                <img src="{{"img/testimonials/testimonial-testtubevase-Anushka-Sani.jpg" | absURL}}" class="img-fluid" alt="Anish Sood">
+                                <div class="testimonial-text">
+                                    <div class="testimonial-inner">
+                                        <p>Absolutely loved the decor I bought from the And So store. They’re lovely accents to the dining table and bar, respectively.  The vase allows me to change the look of the table setting every time I entertain! I loved the store and the entire shopping experience. Tastefully curated!</p>    
+                                        <a href="#">Shop now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-data">
+                                <div class="client-name">
+                                    Atul Naik
+                                </div>
+                                <div class="client-city">
+                                    Mumbai
+                                </div>
+                            </div>    
+                        </div>         
+                    </div>
                 </div>
 
             </div>

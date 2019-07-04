@@ -146,7 +146,7 @@ $(document).ready(function(){
         responsive: [{
             breakpoint: 991,
             settings: {
-            slidesToShow: 3,
+            slidesToShow: 5,
             }
     
         }, {    
@@ -191,7 +191,23 @@ $(document).ready(function(){
         }]
     });
 
+    $(".testimoails-wrap").slick({
+        infinite: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 3,
+        responsive: [{    
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 2,
+                arrows: false,
+            },                        
+        }]
+    });
+
 });
+
+objectFitImages();
 
 $(window).scroll(function(){
     var sticky = $('#header'),
