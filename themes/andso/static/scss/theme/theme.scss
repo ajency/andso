@@ -44,7 +44,15 @@
 @import "shop-page/_shop-page";
 @import "product/_price";
 @import "product/_badges";
-@import "_banner";
+
+//front page 
+@import "frontpage/_banner";
+@import "frontpage/_explorecategories";
+@import "frontpage/_testimonials";
+@import "frontpage/_visitstore";
+@import "frontpage/_dicvover";
+@import "frontpage/_explorefurniture";
+@import "frontpage/_curations";
 
 
 @import "_misc";

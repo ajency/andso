@@ -26,6 +26,33 @@
                                 </picture>                               
                             </a>
                         </div>
+                        <div class="banner-item">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{{"img/banner/Furniture-Banner.jpg" | absURL}}">
+                                    <source media="(max-width: 767px)" srcset="{{"img/banner/2_AndSO_M_WebBanner_oceanchic.jpg" | absURL}}">
+                                    <img src="{{"img/banner/Furniture-Banner.jpg" | absURL}}" alt="Flowers" class="img-fluid">
+                                </picture>                               
+                            </a>
+                        </div>
+                        <div class="banner-item">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{{"img/banner/Lighting-Banner.jpg" | absURL}}">
+                                    <source media="(max-width: 767px)" srcset="{{"img/banner/5_AndSO_M_WebBanner_lighting.jpg" | absURL}}">
+                                    <img src="{{"img/banner/Lighting-Banner.jpg" | absURL}}" alt="Flowers" class="img-fluid">
+                                </picture>                               
+                            </a>
+                        </div>
+                        <div class="banner-item">
+                            <a href="#">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="{{"img/banner/SoftFurnishingsBanner.jpg" | absURL}}">
+                                    <source media="(max-width: 767px)" srcset="{{"img/banner/3_AndSO_M_WebBanner_softfurnishings.jpg" | absURL}}">
+                                    <img src="{{"img/banner/SoftFurnishingsBanner.jpg" | absURL}}" alt="Flowers" class="img-fluid">
+                                </picture>                               
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="discover-section">
@@ -35,26 +62,42 @@
                             <a class="nav-link active" data-toggle="tab" href="#new">New</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#featured">Featured</a>
+                            <a class="nav-link" data-toggle="tab" href="#featured">Our Picks</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#bestsellers">Bestsellers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#liveedge">Liveedge</a>
+                            <a class="nav-link" data-toggle="tab" href="#liveedge">Live Edge</a>
                         </li>
                     </ul>
         
                     <div class="tab-content">
-                        <div class="tab-pane container active" id="new">11</div>
-                        <div class="tab-pane container fade" id="featured">22</div>
-                        <div class="tab-pane container fade" id="bestsellers">33</div>
-                        <div class="tab-pane container fade" id="liveedge">33</div>
+                        <div class="product-slider tab-pane active" id="new">
+                            <ul class="products">
+                                {{- partial "product-loop.html" . -}}
+                            </ul>    
+                        </div>
+                        <div class="product-slider tab-pane fade" id="featured">
+                            <ul class="products">
+                                {{- partial "product-loop.html" . -}}
+                            </ul>  
+                        </div>
+                        <div class="product-slider tab-pane fade" id="bestsellers">
+                            <ul class="products">
+                                {{- partial "product-loop.html" . -}}
+                            </ul>  
+                        </div>
+                        <div class="product-slider tab-pane fade" id="liveedge">
+                            <ul class="products">
+                                {{- partial "product-loop.html" . -}}
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="best-seller-category-section">
-                    <h4 class="section-title text-uppercase">Explore furniture</h4>    
+                <div class="explore-furniture-section">
+                    <h4 class="section-title text-uppercase mobile-title-margin">Explore furniture</h4>    
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="category-wrapper">
@@ -95,7 +138,7 @@
                             </div> 
                         </div>    
                     </div>
-                    <div class="1">
+                    <div class="cat-wrap-outer">
                         <div class="category-slider">
                             <div class="category-wrapper">
                                 <div class="category-image">
@@ -204,7 +247,7 @@
                 </div>       
                 
                 <div class="curations-section">
-                    <h4 class="section-title text-uppercase">Curations</h4>
+                    <h4 class="section-title text-uppercase mobile-title-margin">Curations</h4>
                     <picture>
                         <source media="(min-width: 768px)" srcset="{{"img/curations/Banner.jpg" | absURL}}">
                         <source media="(max-width: 767px)" srcset="{{"img/curations/c_one.jpg" | absURL}}">
@@ -213,7 +256,7 @@
                 </div>
 
                 <div class="explore-categories">
-                    <h4 class="section-title text-uppercase">Home decor</h4>
+                    <h4 class="section-title text-uppercase mobile-title-margin">Home decor</h4>
                     <div class="explore-wrap">
                         <div class="row">
                             <div class="col-sm-6">
@@ -298,7 +341,7 @@
                 </div>
 
                 <div class="testimonails-section">
-                    <h4 class="section-title text-uppercase">Client testimonials</h4>
+                    <h4 class="section-title text-uppercase mobile-title-margin">Client testimonials</h4>
                     <div class="testimoails-wrap">
                         <div class="single-testimonial">
                             <div class="testimonial-img">

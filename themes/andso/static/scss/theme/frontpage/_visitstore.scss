@@ -1,0 +1,76 @@
+.visit-store-section {
+    margin-bottom: 3.125rem;
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .store-img {
+        
+        img {
+            @include media-min(sm) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                font-family: 'object-fit: cover;';
+            }
+        }
+        .store-details {
+            text-align: center;
+            padding: 0 30px;
+            .intro {
+                font-size: 0.875rem
+            }
+            .h-line {
+                width: 75px;
+                border-top: 3px solid #fff;
+                margin-left: auto;
+                margin-right: auto;
+                @include media-max(sm) {
+                    border-top: 3px solid theme-color('dark');
+                }
+            }
+            .store-address {
+                h4{
+                    margin: 0;
+                    font-size: 1.125rem;
+                    line-height: 22px;
+                }
+            }
+            @include media-min(sm) {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+            @include media-max(sm) {
+                padding-top: 15px;
+            }
+        }
+        &:after {
+            @include media-min(sm) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                content: "";
+                background: rgba(0, 0, 0, 0.5);
+            }
+        }
+        @include media-min(sm) {
+            position: relative;
+            height: 0;
+            padding-bottom: 40%;
+        }
+        @include media-max(sm) {
+            margin-bottom: 30px;
+            color: theme-color('dark');
+        }
+    }
+}

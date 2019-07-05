@@ -136,32 +136,6 @@ $(document).ready(function(){
         slidesToShow: 1,
     });
 
-    $(".brand-inner-wrap").slick({
-        infinite: false,
-        arrows: false,
-        dots: false,
-        slidesToShow: 7,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [{
-            breakpoint: 991,
-            settings: {
-            slidesToShow: 5,
-            }
-    
-        }, {    
-            breakpoint: 767,
-            settings: {
-            slidesToShow: 2,
-            },                        
-        }, {    
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 2,
-            }                       
-        }]
-    });
-
     $(".category-slider").slick({
         infinite: false,
         arrows: true,
@@ -175,19 +149,12 @@ $(document).ready(function(){
         }, {    
             breakpoint: 767,
             settings: {
+                infinite: true,
                 slidesToShow: 2,
+                arrows: true,
                 centerMode: true,
-                centerPadding: '10px',
-                arrows: false,
+                centerPadding: '40px',
             },                        
-        }, {    
-            breakpoint: 576,
-            settings: {
-                slidesToShow: 2,
-                centerMode: true,
-                centerPadding: '35px',
-                arrows: false,
-            }                       
         }]
     });
 
@@ -199,10 +166,40 @@ $(document).ready(function(){
         responsive: [{    
             breakpoint: 767,
             settings: {
-                slidesToShow: 2,
-                arrows: false,
+                slidesToShow: 1,
+                arrows: true,
             },                        
         }]
+    });
+
+    $(".product-slider ul.products").slick({
+        infinite: false,
+        arrows: true,
+        dots: false,
+        slidesToShow: 4,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 3,
+            }
+    
+        }, {    
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 2,
+            },                        
+        }, {    
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }                       
+        }]
+    });
+
+    $(document).on('click', '.nav-item a', function(){
+        setTimeout(function(){
+            $('.product-slider ul.products').slick('refresh');
+        },150); 
     });
 
 });
