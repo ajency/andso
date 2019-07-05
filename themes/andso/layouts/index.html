@@ -56,7 +56,9 @@
                     </div>
                 </div>
                 <div class="discover-section">
-                    <h4 class="section-title text-uppercase">Discover</h4> 
+                    <div class="s-title">
+                        <img src="{{"img/2_Discover-01.png" | absURL}}" class="img-fluid" alt="title">
+                    </div>
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" data-toggle="tab" href="#new">New</a>
@@ -97,13 +99,15 @@
                 </div>
 
                 <div class="explore-furniture-section">
-                    <h4 class="section-title text-uppercase mobile-title-margin">Explore furniture</h4>    
+                    <div class="s-title">
+                        <img src="{{"img/1_Explore-01.png" | absURL}}" class="img-fluid" alt="title">
+                    </div>    
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/Look-8_updated-1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Sofa.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -122,7 +126,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/slider1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/table-new.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -143,7 +147,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/category/image1.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Lounger.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -160,7 +164,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/category/image2.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Console.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -177,7 +181,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/category/image3.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Bed.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -194,7 +198,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/category/image4.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Chair.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -228,7 +232,7 @@
                             <div class="category-wrapper">
                                 <div class="category-image">
                                     <a href="#">
-                                        <img src="{{"img/category/image6.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
+                                        <img src="{{"img/explore/Sofa.png" | absURL}}" class="img-fluid" alt="category-image">                                    
                                     </a>
                                     </div>
                                 <div class="category-title">
@@ -248,11 +252,18 @@
                 
                 <div class="curations-section">
                     <h4 class="section-title text-uppercase mobile-title-margin">Curations</h4>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="{{"img/curations/Banner.jpg" | absURL}}">
-                        <source media="(max-width: 767px)" srcset="{{"img/curations/c_one.jpg" | absURL}}">
-                        <img src="{{"img/curations/Banner.jpg" | absURL}}" alt="Curations banner" class="img-fluid">
-                    </picture>
+                    <div class="c-image">
+                        <picture>
+                            <source media="(min-width: 768px)" srcset="{{"img/curations/curations.png" | absURL}}">
+                            <source media="(max-width: 767px)" srcset="{{"img/curations/curations.png" | absURL}}">
+                            <img src="{{"img/curations/curations.png" | absURL}}" alt="Curations banner" class="img-fluid">
+                            <div class="banner-text">
+                                <h4 class="semi">CURATED SPACES</h4>
+                                <h4 class="light">Explore. Experience. Indulge.</h4>
+                                <h4 class="bold">Shop Now ></h4>
+                            </div>
+                        </picture>
+                    </div>
                 </div>
 
                 <div class="explore-categories">
@@ -262,9 +273,9 @@
                             <div class="col-sm-6">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/explore/tableware.png" | absURL}}" alt="Tableware" class="img-fluid">
+                                        <img src="{{"img/homedecor/TableWare.jpg" | absURL}}" alt="Tableware" class="img-fluid">
                                         <div class="category-name">
-                                            <h5>Tableware</h5>
+                                            <h5>TABLE WARE</h5>
                                         </div>
                                     </a>
                                 </div>
@@ -272,9 +283,9 @@
                             <div class="col-sm-6">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/explore/study.png" | absURL}}" alt="Study" class="img-fluid">
+                                        <img src="{{"img/homedecor/Lighting.jpg" | absURL}}" alt="Study" class="img-fluid">
                                         <div class="category-name">
-                                            <h5>Lighting</h5>
+                                            <h5>LIGHTING</h5>
                                         </div>
                                     </a>
                                 </div>
@@ -284,9 +295,9 @@
                             <div class="col-sm-4">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/explore/tables.png" | absURL}}" alt="Tables" class="img-fluid">
+                                        <img src="{{"img/homedecor/DecorativeAccessories.jpg" | absURL}}" alt="Tables" class="img-fluid h-250">
                                         <div class="category-name">
-                                            <h5>Tables</h5>
+                                            <h5>DECORATIVE ACCESSORIES</h5>
                                         </div>
                                     </a>
                                 </div>
@@ -294,9 +305,9 @@
                             <div class="col-sm-4">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/explore/dining.png" | absURL}}" alt="Dining" class="img-fluid">
+                                        <img src="{{"img/homedecor/Mirrors.jpg" | absURL}}" alt="Dining" class="img-fluid h-250">
                                         <div class="category-name">
-                                            <h5>Dining</h5>
+                                            <h5>MIRRORS</h5>
                                         </div>
                                     </a>
                                 </div>
@@ -304,9 +315,9 @@
                             <div class="col-sm-4">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/explore/carpet.png" | absURL}}" alt="Carpets" class="img-fluid">
+                                        <img src="{{"img/homedecor/Planters.jpg" | absURL}}" alt="Carpets" class="img-fluid h-250">
                                         <div class="category-name">
-                                            <h5>Carpets</h5>
+                                            <h5>PLANTERS</h5>
                                         </div>
                                     </a>
                                 </div>
@@ -320,6 +331,9 @@
                         <div class="store-img">
                             <img src="{{"img/pfa.jpg" | absURL}}" class="img-fluid" alt="store-image">
                             <div class="store-details">
+                                <div class="store-title">
+                                    <h2>Visit Our store</h2>
+                                </div>
                                 <div class="intro">
                                     And So is a store that houses a collaborative environment to promote artisanal crafted products with their own modern twist. 
                                     A Collective of designers, artists, storytellers and thinkers that create and curate unique pieces for your everyday life.
@@ -337,11 +351,16 @@
                 </div>
 
                 <div class="brands-section">
-                    <a href=""><img src="{{"img/brands.jpg" | absURL}}" class="img-fluid" alt="brands"></a>
+                    <a href="#"><img src="{{"img/brands.jpg" | absURL}}" class="img-fluid" alt="brands"></a>
                 </div>
 
                 <div class="testimonails-section">
-                    <h4 class="section-title text-uppercase mobile-title-margin">Client testimonials</h4>
+                    <div class="s-title">
+                        <img src="{{"img/3_AndSo_U-01.png" | absURL}}" class="img-fluid" alt="title">
+                    </div>
+                    <div class="s-content">
+                        <p>Here's what our clients are saying about us. Share your journey with AND SO here.</p>
+                    </div>
                     <div class="testimoails-wrap">
                         <div class="single-testimonial">
                             <div class="testimonial-img">

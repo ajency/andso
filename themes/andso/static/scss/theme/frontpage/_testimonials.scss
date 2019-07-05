@@ -1,8 +1,21 @@
 .testimonails-section {
     margin: 0 -10px;
     margin-bottom: 3.125rem;
-    .section-title {
-        padding-left: 10px;
+    .s-content {
+        text-align: center;
+        p{
+            font-size: 1rem;
+            line-height: 1.5rem;
+            padding: 0 0 30px 0;
+            font-weight: 300;
+            letter-spacing: 0.8px;
+            color: #474747;
+            margin: 0px;
+        }
+        @include media-max(sm) {
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
     }
     .testimoails-wrap {
         .slick-prev {
@@ -12,7 +25,7 @@
             right: 9px;
         }
         .single-testimonial {
-            padding: 0 10px;
+            padding: 10px;
             .testimonial-img {
                 position: relative;
                 cursor: pointer;

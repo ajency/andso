@@ -22,8 +22,18 @@
         .store-details {
             text-align: center;
             padding: 0 30px;
+            .store-title {
+                h2  {
+                    @include media-between(sm, md) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
             .intro {
-                font-size: 0.875rem
+                font-size: 1rem;
+                @include media-between(sm, md) {
+                    font-size: 0.875rem;
+                }
             }
             .h-line {
                 width: 75px;
@@ -39,6 +49,9 @@
                     margin: 0;
                     font-size: 1.125rem;
                     line-height: 22px;
+                    @include media-max(md) {
+                        font-size: 1rem;
+                    }
                 }
             }
             @include media-min(sm) {
@@ -63,10 +76,18 @@
                 background: rgba(0, 0, 0, 0.5);
             }
         }
+        @include media-min(lg) {
+            padding-bottom: 31%;
+        }
+        @include media-between(md, lg) {
+            padding-bottom: 40%;
+        }
+        @include media-between(sm, md) {
+            padding-bottom: 45%;
+        }
         @include media-min(sm) {
             position: relative;
             height: 0;
-            padding-bottom: 40%;
         }
         @include media-max(sm) {
             margin-bottom: 30px;

@@ -16,6 +16,11 @@
                 img {
                     width: 100%;
                     height: auto;
+                    height: 275px;
+                    object-fit: contain;
+                    &.h-250 {
+                        height: 250px;
+                    }
                 }
                 .category-name {
                     position: absolute;

@@ -6,15 +6,16 @@
         li.nav-item {
             margin-bottom: 0;
             padding: 0.75rem 2rem;
+            padding-top: 0;
             .nav-link {
                 border: 0;
                 padding: 0;
                 color: theme-color('dark');
                 padding-bottom: 5px;
                 font-size: 1rem;
+                font-weight: 700;
                 &.active {
-                    font-weight: 700;
-                    color: theme-color('dark');
+                    color: theme-color('primary');
                     background-color: transparent;
                     border: 0;
                     border-bottom: 2px solid theme-color('primary');
@@ -22,6 +23,7 @@
             }
             @include media-max(sm) {
                 padding: 0.5rem 1.2rem;
+                padding-top: 0;
             }
         }
     }
