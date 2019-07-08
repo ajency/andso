@@ -136,8 +136,6 @@ $(document).ready(function(){
         slidesToShow: 1,
     });
 
-    
-
     $(".testimoails-wrap").slick({
         infinite: true,
         arrows: true,

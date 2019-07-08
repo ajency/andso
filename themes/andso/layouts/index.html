@@ -4,8 +4,8 @@
     <body>
         {{- partial "header.html" . -}}
         <div id="content">
-        {{- block "main" . }}     
-            <div class="container-fluid container-spacing">
+        {{- block "main" . }} 
+            <div class="">
                 <div class="banner">
                     <div class="banner-inner">
                         <div class="banner-item">
@@ -55,6 +55,8 @@
                         </div>
                     </div>
                 </div>
+            </div>    
+            <div class="container">
                 <div class="discover-section">
                     <div class="s-title">
                         <img src="{{"img/2_Discover-01.png" | absURL}}" class="img-fluid" alt="title">
