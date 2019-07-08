@@ -1,15 +1,16 @@
 .curations-section {
-    margin-bottom: 4.375rem;
+    margin-bottom: 3.125rem;
     .c-image {
         position: relative;
         picture {
             .banner-text {
                 position: absolute;
-                top: 50%;
+                top: 50px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%);
                 text-align: center;
                 min-width: 320px;
+                color: #fff;
                 h4{
                     margin: 0;
                     &.semi {
@@ -36,6 +37,6 @@
         }
     }
     @include  media-max(sm) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.56rem;
     }
 }

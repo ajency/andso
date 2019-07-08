@@ -1,5 +1,5 @@
 .visit-store-section {
-    margin-bottom: 4.375rem;
+    margin-bottom: 3.125rem;
     a{
         color: #fff;
         text-decoration: none;
@@ -93,5 +93,8 @@
             margin-bottom: 30px;
             color: theme-color('dark');
         }
+    }
+    @include media-max(sm) {
+        margin-bottom: 2rem;
     }
 }

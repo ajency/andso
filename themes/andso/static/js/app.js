@@ -136,27 +136,24 @@ $(document).ready(function(){
         slidesToShow: 1,
     });
 
-    $(".category-slider").slick({
-        infinite: false,
-        arrows: true,
+    $('.category-slider').owlCarousel({
+        loop: false,
+        margin: 20,
+        items: 4,
+        nav: true,
         dots: false,
-        slidesToShow: 4,
-        responsive: [{
-            breakpoint: 991,
-            settings: {
-            slidesToShow: 3,
+        responsive:{
+            0:{
+                items: 2,
+            },
+            767:{
+                items:3
+            },
+            991:{
+                items:4
             }
-        }, {    
-            breakpoint: 767,
-            settings: {
-                infinite: true,
-                slidesToShow: 2,
-                arrows: true,
-                centerMode: true,
-                centerPadding: '40px',
-            },                        
-        }]
-    });
+        }
+    })
 
     $(".testimoails-wrap").slick({
         infinite: false,

@@ -1,11 +1,20 @@
 .explore-furniture-section {
     text-align: center;
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.5rem;
     .category-wrapper {
         margin-bottom: 10px;
         .category-image {
             margin-bottom: 10px;
             position: relative;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: auto;
+                transition: transform .9s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
             a {
                 outline: 0;
             }
@@ -31,35 +40,26 @@
     }
 
     .category-slider {
-        .slick-list{
-            @include media-max(sm) {
-                padding-left: 0!important;
+        .owl-prev {
+            @include media-min(lg) {
+                left: -35px;
+                position: relative;
             }
         }
-        .slick-prev {
+        .owl-next {
             @include media-min(lg) {
-                left: -26px;
-            }
-        }
-        .slick-next {
-            @include media-min(lg) {
-                right: -28px;
+                right: -35px;
+                position: relative;
             }
         }
         .category-wrapper {
-            img{
-                padding: 0 13px;
-                &:hover {
-                    //transition: all 0.3s ease-in-out;
-                    //transform: scale(1.1);
-                }
-                @include media-max(sm) {
-                    padding-left: 0;
+            .category-image {
+                img{
+                    @include media-max(sm) {
+                        padding-left: 0;
+                    }
                 }
             }
-        }
-        @include media-min(sm) {
-            margin: 0 -13px;
         }
     }
     @include media-max(sm) {

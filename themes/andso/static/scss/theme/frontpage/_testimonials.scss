@@ -1,6 +1,6 @@
 .testimonails-section {
     margin: 0 -10px;
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.5rem;
     .s-content {
         text-align: center;
         p{
@@ -113,5 +113,8 @@
                 }
             }
         }
+    }
+    @include media-max(sm) {
+        margin-bottom: 2rem;
     }
 }
