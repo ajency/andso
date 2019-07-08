@@ -35,6 +35,10 @@
             .testimonial-img {
                 position: relative;
                 cursor: pointer;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
                 .testimonial-text {
                     position: absolute;
                     width: 100%;
