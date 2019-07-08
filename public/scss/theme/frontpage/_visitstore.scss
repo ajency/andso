@@ -5,19 +5,19 @@
         text-decoration: none;
     }
     .store-img {
-        
+        position: relative;
+        height: 0;
+        padding-bottom: 75%;
         img {
-            @include media-min(sm) {
-                position: absolute;
-                top: 0;
-                right: 0;
-                left: 0;
-                bottom: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                font-family: 'object-fit: cover;';
-            }
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            font-family: 'object-fit: cover;';
         }
         .store-details {
             text-align: center;
@@ -27,12 +27,18 @@
                     @include media-between(sm, md) {
                         margin-bottom: 10px;
                     }
+                    @include media-max(sm) {
+                        margin-bottom: 0;
+                    }
                 }
             }
             .intro {
                 font-size: 1rem;
                 @include media-between(sm, md) {
                     font-size: 0.875rem;
+                }
+                @include media-max(sm) {
+                    display: none;
                 }
             }
             .h-line {
@@ -41,7 +47,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 @include media-max(sm) {
-                    border-top: 3px solid theme-color('dark');
+                    margin-bottom: 20px;
                 }
             }
             .store-address {
@@ -54,27 +60,23 @@
                     }
                 }
             }
-            @include media-min(sm) {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 2;
-            }
             @include media-max(sm) {
-                padding-top: 15px;
+                min-width: 320px;
             }
         }
         &:after {
-            @include media-min(sm) {
-                position: absolute;
-                top: 0;
-                right: 0;
-                left: 0;
-                bottom: 0;
-                content: "";
-                background: rgba(0, 0, 0, 0.5);
-            }
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
         }
         @include media-min(lg) {
             padding-bottom: 31%;
@@ -85,13 +87,9 @@
         @include media-between(sm, md) {
             padding-bottom: 45%;
         }
-        @include media-min(sm) {
-            position: relative;
-            height: 0;
-        }
         @include media-max(sm) {
             margin-bottom: 30px;
-            color: theme-color('dark');
+            //color: theme-color('dark');
         }
     }
     @include media-max(sm) {

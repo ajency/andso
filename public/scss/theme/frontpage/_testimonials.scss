@@ -36,7 +36,6 @@
                 position: relative;
                 cursor: pointer;
                 .testimonial-text {
-                    display: none;
                     position: absolute;
                     width: 100%;
                     height: 100%;
@@ -44,6 +43,8 @@
                     left: 0px;
                     z-index: 100;
                     background-color: rgba(0,0,0,0.5);
+                    transition: opacity 1s ease;
+                    opacity: 0;
                     .testimonial-inner {
                         position: absolute;
                         padding: 10px;
@@ -63,7 +64,7 @@
                                 line-height: 1rem;
                             }
                             @include media-max(sm) {
-                                font-size: 1.025rem;
+                                font-size: 0.875rem;
                             }
                         }
                         a {
@@ -78,17 +79,21 @@
                                 font-size: 0.75rem;
                             }
                             @include media-max(sm) {
-                                font-size: 1.025rem;
+                                font-size: 0.875rem;
                             }
                         }
                         @include media-max(sm) {
                             padding: 10px 25px;
                         }
                     }
+                    @include media-max(sm) {
+                        opacity: 1;
+                        transition: opacity 0.1s ease;
+                    }
                 }
                 &:hover {
                     .testimonial-text {
-                        display: block;
+                       opacity: 1;
                     }
                 }
             }

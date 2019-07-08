@@ -34,6 +34,8 @@
         height: auto;
         @include media-max(sm) {
             height: 300px;
+            object-fit: cover;
+	        font-family: 'object-fit: cover;';
         }
     }
     @include  media-max(sm) {
