@@ -27,14 +27,23 @@
         }
     }
     .slick-slider {
-        .slick-prev {
-            @include media-min(lg) {
-                left: 15px;
+        .slick-arrow {
+            &.slick-prev {
+                background: transparent!important;
+                @include media-min(md) {
+                    left: 15px;
+                }
             }
-        }
-        .slick-next {
-            @include media-min(lg) {
-                right: 15px;
+            &.slick-next {
+                background: transparent!important;
+                @include media-min(md) {
+                    right: 15px;
+                }
+            }
+            &:hover {
+                &::before {
+                    border-color: theme-color('dark');
+                }
             }
         }
     }
