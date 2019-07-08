@@ -1,6 +1,6 @@
 .testimonails-section {
     margin: 0 -10px;
-    margin-bottom: 3.125rem;
+    margin-bottom: 3.75rem;
     .s-content {
         text-align: center;
         p{
@@ -20,9 +20,15 @@
     .testimoails-wrap {
         .slick-prev {
             left: 9px;
+            @include media-min(lg) {
+                left: -26px;
+            }
         }
         .slick-next {
             right: 9px;
+            @include media-min(lg) {
+                right: -26px;
+            }
         }
         .single-testimonial {
             padding: 10px;

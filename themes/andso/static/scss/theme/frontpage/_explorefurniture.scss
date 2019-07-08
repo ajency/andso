@@ -1,6 +1,6 @@
 .explore-furniture-section {
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.75rem;
     .category-wrapper {
         margin-bottom: 10px;
         .category-image {
@@ -36,13 +36,23 @@
                 padding-left: 0!important;
             }
         }
+        .slick-prev {
+            @include media-min(lg) {
+                left: -26px;
+            }
+        }
+        .slick-next {
+            @include media-min(lg) {
+                right: -28px;
+            }
+        }
         .category-wrapper {
             img{
                 padding: 0 10px;
             }
         }
         @include media-min(md) {
-            margin: 0 -12px;
+            margin: 0 -13px;
         }
     }
     @include media-max(sm) {
