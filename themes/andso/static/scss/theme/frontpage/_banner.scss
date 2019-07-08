@@ -26,12 +26,12 @@
     .slick-slider {
         .slick-prev {
             @include media-min(lg) {
-                left: -36px;
+                left: 15px;
             }
         }
         .slick-next {
             @include media-min(lg) {
-                right: -36px;
+                right: 15px;
             }
         }
     }
@@ -70,4 +70,8 @@
             max-width: 250px;
         }
     }
+}
+
+.no-padding {
+    padding: 0;
 }

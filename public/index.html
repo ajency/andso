@@ -1144,8 +1144,8 @@
                         </div>    
                     </div>
                     <div class="cat-wrap-outer">
-                        <div class="category-slider owl-carousel owl-theme">
-                            <div class="category-wrapper">
+                        <div class="category-slider row">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="https://ajency.github.io/andso/public/img/explore/Lounger.png" class="img-fluid" alt="category-image">                                    
@@ -1162,7 +1162,7 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="https://ajency.github.io/andso/public/img/explore/Console.png" class="img-fluid" alt="category-image">                                    
@@ -1179,7 +1179,7 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="https://ajency.github.io/andso/public/img/explore/Bed.png" class="img-fluid" alt="category-image">                                    
@@ -1196,7 +1196,7 @@
                                     </a>
                                 </div>  
                             </div> 
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="https://ajency.github.io/andso/public/img/explore/Chair.png" class="img-fluid" alt="category-image">                                    
@@ -1213,40 +1213,6 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="https://ajency.github.io/andso/public/img/category/image5.jpg" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="https://ajency.github.io/andso/public/img/explore/Chair.png" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div> 
                         </div>    
                     </div> 
                 </div>       
@@ -1274,7 +1240,7 @@
                             <div class="col-sm-6">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="https://ajency.github.io/andso/public/img/homedecor/TableWare.jpg" alt="Tableware" class="img-fluid">
+                                        <img src="https://ajency.github.io/andso/public/img/homedecor/dot.png" alt="Tableware" class="img-fluid">
                                         <div class="category-name">
                                             <h5>TABLE WARE</h5>
                                         </div>
@@ -1443,7 +1409,111 @@
                 </div>
 
             </div>
-        </div><footer class="footer" id="footer">
+        </div>
+<div class="modal fade product-quick-view-modal" id="loop-product-quickview" tabindex="-1" role="dialog" aria-labelledby="loop-product-quickview" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="quick-view-nav d-none">
+                <button type="button" class="qv-prev qv-nav"><i class="arrow__left"></i></button>
+                <button type="button" class="qv-next qv-nav"><i class="arrow__right"></i></button>
+            </div>
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon ion-md-close nav-icon"></i>
+                </button>
+                <div class="product-quick-view">
+                    <div class="container-fluid pl-0 pr-0">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 sp-col-left">
+                                <ul class="quick-view-gallery">
+                                    <li class="qv-gallery-img">
+                                        <img src="https://ajency.github.io/andso/public/img/ps-potrait_1.jpg" class="img-fluid">
+                                    </li>
+                                    <li class="qv-gallery-img">
+                                        <img src="https://ajency.github.io/andso/public/img/ps-potrait_2.jpg" class="img-fluid">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-12 col-lg-6 sp-col-right">
+                                <div class="product-summary pb-5">
+                                    <h1 class="product-title">BAWA LOUNGER</h1>
+                                    <div class="product-brand">By <a href="#" target="_self">Josmo</a></div>
+            
+                                    <div class="price-wrap mt-3">
+                                        <p class="price">
+                                            <span class="Price-amount amount">
+                                                <span class="Price-currencySymbol">₹</span>
+                                                90,000
+                                            </span>
+                                        </p>
+                                    </div>
+
+                                    <div class="product-varition mb-4">
+                                        <div class="varition-box varition-color">
+                                            <div class="varition-title">Color: <span class="color-val"></span></div>
+                                            <div class="varition-list">
+                                            <ul>
+                                                <li>
+                                                <input type="radio" class="color-varient" data-colorname="Black" name="color" id="color-1" checked>
+                                                <label for="color-1"><div class="color black"></div></label>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                        <div class="varition-box varition-size">
+                                            <div class="varition-title">Size</div>
+                                            <div class="varition-list">
+                                            <ul>
+                                                <li>
+                                                <input type="radio" class="size-varient" name="size" id="size-1">
+                                                <label for="size-1">S</label>
+                                                </li>
+                                                <li>
+                                                <input type="radio" class="size-varient" name="size" id="size-2">
+                                                <label for="size-2">M</label>
+                                                </li>
+                                                <li>
+                                                <input type="radio" class="size-varient" name="size" id="size-3">
+                                                <label for="size-3">L</label>
+                                                </li>
+                                            </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cart">
+                                        <div class="d-flex align-items-center pb-3">
+                                            <div class="quantity">
+                                            <div class="quantity-box">
+                                                <button type="button" class="qty-btn minus-btn">-</button>
+                                                <input type="number" name="qty" class="custom-qty qty" value="1" min="1" disabled>
+                                                <button type="button" class="qty-btn plus-btn">+</button>
+                                            </div>
+                                            </div>
+                                            <div class="product-set-of">Set of 1</div>                                  
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="add-to-fav-wrap">
+                                                <button type="button" class="add-to-fav"><i class="icon ion-md-heart nav-icon"></i></button>
+                                            </div>
+                                            <div class="flex-fill add-to-cart-wrap">    
+                                                <button type="button" class="btn btn-primary add_to_cart_button">Add to cart</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="view-product mt-4 mb-3">
+                                        <a class="view-product--link" href="https://ajency.github.io/andso/public/product/bawa-by-josmo-studio/" target="_blank">View Product Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><footer class="footer" id="footer">
 	<div class="container-fluid container-spacing">
 
 		

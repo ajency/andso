@@ -136,27 +136,10 @@ $(document).ready(function(){
         slidesToShow: 1,
     });
 
-    $('.category-slider').owlCarousel({
-        loop: false,
-        margin: 20,
-        items: 4,
-        nav: true,
-        dots: false,
-        responsive:{
-            0:{
-                items: 2,
-            },
-            767:{
-                items:3
-            },
-            991:{
-                items:4
-            }
-        }
-    })
+    
 
     $(".testimoails-wrap").slick({
-        infinite: false,
+        infinite: true,
         arrows: true,
         dots: false,
         slidesToShow: 3,

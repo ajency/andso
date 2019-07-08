@@ -143,8 +143,8 @@
                         </div>    
                     </div>
                     <div class="cat-wrap-outer">
-                        <div class="category-slider owl-carousel owl-theme">
-                            <div class="category-wrapper">
+                        <div class="category-slider row">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="{{"img/explore/Lounger.png" | absURL}}" class="img-fluid" alt="category-image">                                    
@@ -161,7 +161,7 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="{{"img/explore/Console.png" | absURL}}" class="img-fluid" alt="category-image">                                    
@@ -178,7 +178,7 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="{{"img/explore/Bed.png" | absURL}}" class="img-fluid" alt="category-image">                                    
@@ -195,7 +195,7 @@
                                     </a>
                                 </div>  
                             </div> 
-                            <div class="category-wrapper">
+                            <div class="category-wrapper col-sm-3">
                                 <div class="category-image">
                                     <a href="#">
                                         <img src="{{"img/explore/Chair.png" | absURL}}" class="img-fluid" alt="category-image">                                    
@@ -212,40 +212,6 @@
                                     </a>
                                 </div>  
                             </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/category/image5.jpg" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div>
-                            <div class="category-wrapper">
-                                <div class="category-image">
-                                    <a href="#">
-                                        <img src="{{"img/explore/Chair.png" | absURL}}" class="img-fluid" alt="category-image">                                    
-                                    </a>
-                                    </div>
-                                <div class="category-title">
-                                    <a href="#">
-                                        Category one
-                                    </a>
-                                </div> 
-                                <div class="category-product-count">
-                                    <a href="#">
-                                        200+ products
-                                    </a>
-                                </div>  
-                            </div> 
                         </div>    
                     </div> 
                 </div>       
@@ -273,7 +239,7 @@
                             <div class="col-sm-6">
                                 <div class="single-category">
                                     <a href="#">
-                                        <img src="{{"img/homedecor/TableWare.jpg" | absURL}}" alt="Tableware" class="img-fluid">
+                                        <img src="{{"img/homedecor/dot.png" | absURL}}" alt="Tableware" class="img-fluid">
                                         <div class="category-name">
                                             <h5>TABLE WARE</h5>
                                         </div>
@@ -444,6 +410,7 @@
             </div>
         {{- end }}
         </div>
+        {{- partial "products/quick-view.html" . -}}
         {{- partial "footer.html" . -}}
     </body>
 </html>
