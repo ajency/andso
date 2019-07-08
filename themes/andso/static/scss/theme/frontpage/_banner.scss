@@ -71,27 +71,3 @@
         }
     }
 }
-
-.mr-10 {
-    @include media-min(sm) {
-        //margin-right: -10px;
-    }
-}
-
-.ml-10 {
-    @include media-min(sm) {
-        //margin-left: -10px;
-    }
-}
-
-.pr-10 {
-    @include media-min(sm) {
-        //padding-right: 10px;
-    }
-}
-
-.pl-10 {
-    @include media-min(sm) {
-        //padding-left: 10px;
-    }
-}
