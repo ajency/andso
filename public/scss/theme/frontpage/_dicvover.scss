@@ -25,6 +25,10 @@
                 padding: 0.5rem 1.2rem;
                 padding-top: 0;
             }
+            @include media-max(sm) {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
         }
     }
     .tab-content {
@@ -32,6 +36,9 @@
             ul.products {
                 padding-left: 0;
                 padding-right: 0;
+                li.product {
+                    margin-bottom: 0;
+                }
                 .slick-prev {
                     @include media-min(lg) {
                         left: -35px;
