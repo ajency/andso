@@ -48,10 +48,17 @@
         }
         .category-wrapper {
             img{
-                padding: 0 10px;
+                padding: 0 13px;
+                &:hover {
+                    //transition: all 0.3s ease-in-out;
+                    //transform: scale(1.1);
+                }
+                @include media-max(sm) {
+                    padding-left: 0;
+                }
             }
         }
-        @include media-min(md) {
+        @include media-min(sm) {
             margin: 0 -13px;
         }
     }

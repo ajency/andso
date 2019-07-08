@@ -27,6 +27,24 @@
             }
         }
     }
+    .tab-content {
+        .product-slider {
+            ul.products {
+                padding-left: 0;
+                padding-right: 0;
+                .slick-prev {
+                    @include media-min(lg) {
+                        left: -35px;
+                    }
+                }
+                .slick-next {
+                    @include media-min(lg) {
+                        right: -35px;
+                    }
+                }
+            }
+        }
+    }
     @include media-max(sm) {
         margin-bottom: 0;
     }
