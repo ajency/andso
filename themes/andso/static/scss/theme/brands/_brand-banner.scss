@@ -1,0 +1,23 @@
+.brands-banner {
+    margin-bottom: 1.56rem;
+    .row-background {
+        background-color: theme-color('primary');
+        padding: 15px;
+        .brand-title {
+            @include media-max(sm) {
+                text-align: center;
+            }
+        }
+        .brand-description {
+            @include media-max(sm) {
+                text-align: center;
+            }
+        }
+        .brand-logo {
+            text-align: center;
+            img {
+                width: 100px;
+            }
+        }
+    }
+}

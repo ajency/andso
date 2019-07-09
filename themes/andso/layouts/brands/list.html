@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>  
+    <link href="{{"css/vendor/ion.rangeSlider.min.css" | absURL}}" rel="stylesheet">
+    <link href="{{"css/vendor/animate.css" | absURL}}" rel="stylesheet">
+    <link href="{{"css/vendor/slick.css" | absURL}}" rel="stylesheet">
+    {{- partial "head.html" . -}}
+    <body class="shop-page">
+        {{- partial "header.html" . -}}
+        <div class="page-container bg-layout-dotes">
+            {{- partial "breadcrumb.html" . -}}            
+            
+            <div class="container-fluid container-spacing">
+                <div class="row">
+                    <div class="col-lg-3 col-xl-3 col-xxl-2 sticky-sidebar">
+                        {{- partial "shop-page-components/sidebar.html" . -}}
+                    </div>
+                    <div class="col-lg-9 col-xl-9 col-xxl-10">
+                        <div class="row d-none d-lg-block pb-4">
+                            <div class="col-12">
+                                <div class="filter-top d-flex justify-content-end pb-2 b-b-1">
+                                    <div class="search-wrap d-flex align-items-end">
+                                        <div class="search-box d-flex flex-row">
+                                            <input class="search-input form-control" name="s-input" id="s-input" placeholder="Search for Product" type="search">
+                                            <label for="s-input" class="animated-label"></label>
+                                            <button type="submit" class="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row filter-sortby select-border">
+                                        <div class="align-self-center">
+                                            <h6 class="m-0 f-w-4 sub-text"> Sort By:</h6>
+                                        </div>
+                                        <div class="pl-2 align-self-center">
+                                            <select class="size form-control form-control-sm br-0 custom">
+                                                <option>Recommended</option>
+                                                <option>Price Low to High</option>
+                                                <option>Price High to Low</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="product-listing">
+                                <div class="product-loop-section">
+                                    <ul class="products">
+                                        {{- partial "product-loop.html" . -}}
+                                        {{- partial "product-loop.html" . -}}
+                                    </ul>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            
+            <div class="mobile-filter-action bottom-sticky d-flex d-lg-none">
+                <div class="filter-action sort-by text-center border-right">
+                    <button type="button" class="btn filter-btn res-sortby-btn w-100">Sort By <i class="icon ion-md-arrow-dropup nav-icon"></i></button>
+                    <div class="sort-by-dropdown">
+                        <ul>
+                            <li>Recommended</li>
+                            <li>Price Low to High</li>
+                            <li>Price High to Low</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="filter-action filter text-center">
+                    <button type="button" class="btn filter-btn res-filter-btn w-100"><i class="fas fa-filter"></i></button>
+                </div>
+            </div>
+        </div>
+        
+        {{- partial "products/quick-view.html" . -}}
+
+        {{- partial "footer.html" . -}}
+        <script type="text/javascript" src="{{"js/vendor/theia-sticky-sidebar.js" | relURL}}"></script>
+        <script type="text/javascript" src="{{"js/vendor/ion.rangeSlider.min.js" | relURL}}"></script>
+        <script type="text/javascript" src="{{"js/vendor/slick.min.js" | relURL}}"></script>
+    </body>
+</html>      
