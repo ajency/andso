@@ -1,0 +1,27 @@
+.color-variants {
+    .color-title {
+        font-size: 1rem;
+        font-weight: 700;
+        color: theme-color('dark');
+        text-transform: uppercase;
+        padding-bottom: 0.625rem;
+    }
+    .color-list {
+        ul {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+            li {
+                display: inline-block;
+                margin-right: 10px;
+                label {
+                    cursor: pointer;
+                    img {
+                        width: 50px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

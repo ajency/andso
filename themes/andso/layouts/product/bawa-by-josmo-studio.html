@@ -45,17 +45,6 @@
                           </div>
 
                           <div class="product-varition mb-4">
-                            <div class="varition-box varition-color">
-                              <div class="varition-title">Color: <span class="color-val"></span></div>
-                              <div class="varition-list">
-                                <ul>
-                                  <li>
-                                    <input type="radio" class="color-varient" data-colorname="Black" name="color" id="color-1" checked>
-                                    <label for="color-1"><div class="color black"></div></label>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
                             <div class="varition-box varition-size">
                               <div class="varition-title">Size</div>
                               <div class="varition-list">
@@ -145,12 +134,31 @@
                                   </div>
                                 </div>
                               </div>
-                          </div>                          
+                          </div>  
+                          <div class="color-variants mt-5">
+                              <div class="color-title">Also available in: </div>
+                              <div class="color-list">
+                                <ul class="d-flex flex-wrap">
+                                  <li>
+                                      <input type="radio" class="color-varient d-none" name="color" id="color-1" checked>
+                                      <label for="color-1"><img src="{{"img/related-products/rp-1.jpg" | absURL}}" class="img-fluid" alt="color-image"></label>
+                                  </li>
+                                  <li>
+                                      <input type="radio" class="color-varient d-none" name="color" id="color-2" checked>
+                                      <label for="color-2"><img src="{{"img/related-products/rp-2.jpg" | absURL}}" class="img-fluid" alt="color-image"></label>
+                                  </li>
+                                  <li>
+                                      <input type="radio" class="color-varient d-none" name="color" id="color-3" checked>
+                                      <label for="color-3"><img src="{{"img/related-products/rp-3.jpg" | absURL}}" class="img-fluid" alt="color-image"></label>
+                                  </li>
+                                </ul>
+                              </div>
+                          </div>                        
                   </div>
               </div>
           </div>
         </div>
-      
+
       <!-- Similiar Products -->
       {{- partial "products/related-products.html" . -}}      
       <!-- End of Similiar Products --> 
