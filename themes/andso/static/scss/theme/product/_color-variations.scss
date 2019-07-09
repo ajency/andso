@@ -13,12 +13,35 @@
             margin-bottom: 0;
             li {
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 12px;
                 label {
                     cursor: pointer;
+                    position: relative;
                     img {
                         width: 50px;
                         height: auto;
+                        border: 1px solid theme-color('dark');
+                    }
+                    .hover-text {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        transition: all .6s ease;
+                        opacity: 0;
+                        font-size: 10px;
+                        background: #fff;
+                        padding: 2px;
+                        border: 0;
+                        color: theme-color('dark');
+                    }
+                    &:hover {
+                        img {
+                            border: 1px solid theme-color('primary');
+                        }
+                        .hover-text {
+                            opacity: 1;
+                        }
                     }
                 }
             }
