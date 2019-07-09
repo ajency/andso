@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Brands on AND SO Store</title>
+    <link>https://ajency.github.io/andso/public/brands/</link>
+    <description>Recent content in Brands on AND SO Store</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 31 May 2019 10:45:49 +0530</lastBuildDate>
+    
+	<atom:link href="https://ajency.github.io/andso/public/brands/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Josmo</title>
+      <link>https://ajency.github.io/andso/public/brands/josmo/</link>
+      <pubDate>Fri, 31 May 2019 10:45:49 +0530</pubDate>
+      
+      <guid>https://ajency.github.io/andso/public/brands/josmo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
