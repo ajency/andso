@@ -21,7 +21,13 @@
 					text-decoration: none;
 					color: theme-color('primary');
 				}
+				@include media-max(md) {
+					padding-left: 0;
+				}
 			}		
+		}
+		@include media-max(md) {
+			justify-content: flex-start;
 		}
 	}
 }
@@ -31,5 +37,8 @@
 		color: theme-color('linen');
 		padding: 0 0 1rem;
 		font-size: .875rem;
+	}
+	@include media-max(md) {
+		text-align: left;
 	}
 }

@@ -6,16 +6,15 @@
         font-size: .875rem;
         font-weight: 500;
         margin-bottom: 0.625rem;
-
         @include media-max(md){
-            text-align: center;
+            text-align: left;
         }
     }
     &-sub-title {
         color: #fff; 
         font-size: 0.875rem;
         @include media-max(md){
-            text-align: center;
+            text-align: left;
         }
     }
 }
@@ -37,7 +36,7 @@
             }
         }
         @include media-max(md){
-            text-align: center;
+            text-align: left;
         }
     }
     .footer-sticky-bg {

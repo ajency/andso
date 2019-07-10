@@ -23,7 +23,7 @@
 			font-size: 0.875rem;
 		}
 		@include media-max(md){
-			text-align: center;
+			text-align: left;
 		}
 	}
 	.seperator{
@@ -65,7 +65,16 @@
 			position: relative;
 			padding-left: 26px;
 			margin-bottom: 8px;
-			
+			&.mdl {
+				@include media-max(md){
+					padding-left: 1rem;
+				}
+			}
+			&.mi-text {
+				@include media-max(md){
+					display: inline-block;
+				}
+			}
 			@include media-min(md){
 				.icon {
 					position: absolute;
@@ -73,9 +82,12 @@
 					top: -3px;
 				}
 			}
+			@include media-max(md){
+				padding-left: 0;
+			}
 		}
 	}
 	@include media-max(md){
-		text-align: center;
+		text-align: left;
 	}
 }

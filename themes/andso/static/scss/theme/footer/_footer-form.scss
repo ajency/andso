@@ -48,7 +48,7 @@
 			box-shadow: none !important;
 		}
 		@include media-max(md) {
-			margin-left: auto;
+			margin-left: 0;
 			margin-right: auto;
 		}
 	}
@@ -56,6 +56,7 @@
 		form {
 			margin: 0 auto;
 			max-width: 50%;
+			margin-left: 0;
 		}
 	}
 	@include media-max(sm) {		
