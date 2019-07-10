@@ -12,5 +12,8 @@
         @include media-max(md) {
             padding-top: 0.9375rem;
         }
+        @include media-max(sm) {
+            padding-bottom: 1.25rem !important;
+        }
     }
 }

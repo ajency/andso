@@ -71,11 +71,15 @@
             </div>
         </div>
         
+        
         {{- partial "products/quick-view.html" . -}}
 
         {{- partial "footer.html" . -}}
         <script type="text/javascript" src="{{"js/vendor/theia-sticky-sidebar.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/vendor/ion.rangeSlider.min.js" | relURL}}"></script>
         <script type="text/javascript" src="{{"js/vendor/slick.min.js" | relURL}}"></script>
+        <script>
+            $('#josmo').prop('checked', true);
+        </script>
     </body>
 </html>      

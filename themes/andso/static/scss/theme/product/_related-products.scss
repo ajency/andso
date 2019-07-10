@@ -13,4 +13,7 @@
         padding-left: 55px;
         padding-right: 55px;
     }
+    @include media-max(sm) {
+        margin-top: 0!important;    
+    }
 }

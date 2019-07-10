@@ -3,6 +3,29 @@
     .explore-wrap {
         clear: left;
         overflow: hidden;
+        &.slick-initialized {
+            .slick-list {
+                padding-left: 0 !important;
+            }
+        }
+        .width-50 {
+            @include media-min(sm) {
+                flex: 0 0 50%;
+                max-width: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 100%;
+            }
+        }
+        .width-33 {
+            @include media-min(sm) {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+                padding-left: 15px;
+                padding-right: 15px;
+                width: 100%;
+            }
+        }
         .single-category {
             position: relative;
             margin-bottom: 30px;
@@ -20,6 +43,9 @@
                     object-fit: contain;
                     &.h-250 {
                         height: 250px;
+                    }
+                    @include media-max(sm) {
+                        height: auto !important;
                     }
                 }
                 .category-name {
@@ -44,7 +70,13 @@
             }
             @include media-max(sm) {
                 margin-bottom: 15px;
+                padding-right: 10px;
             }
+        }
+        @include media-min(sm) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
         }
     }
 }

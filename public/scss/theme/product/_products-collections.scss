@@ -82,3 +82,9 @@
         padding: .6875rem 3.125rem;
     }
 }
+
+.product-collection {
+    @include media-max(sm) {
+        margin-top: 1.25rem !important;
+    }
+}
