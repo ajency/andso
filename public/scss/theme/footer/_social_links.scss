@@ -44,3 +44,9 @@
     margin-bottom: 0;
     font-size: 0.875rem;
 }
+
+.social-info {
+    @include media-max(md) {
+        margin-top: 0!important;
+    }
+}

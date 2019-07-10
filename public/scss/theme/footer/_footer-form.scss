@@ -53,6 +53,7 @@
 		}
 	}
 	@include media-max(md) {
+		margin-bottom: 0.75rem !important;
 		form {
 			margin: 0 auto;
 			max-width: 50%;

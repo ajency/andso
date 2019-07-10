@@ -31,7 +31,13 @@
 			transform: translateY(-50%);
 		}
 	}
+	.mm-top-0 {
+		@include media-max(md) {
+			margin-top: 0!important;
+		}
+	}
 	@media (max-width: 991px){
 		text-align: left;
+		margin-bottom: 0.625rem;
 	}
 }    

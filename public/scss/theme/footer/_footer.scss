@@ -21,6 +21,9 @@
 
 .footer-seperator {
     border-color: #646464;
+    @include media-max(sm) {
+        margin-top: 0.75rem;
+    }
 }
 
 .footer {

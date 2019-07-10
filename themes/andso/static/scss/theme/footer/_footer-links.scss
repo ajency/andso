@@ -22,12 +22,16 @@
 					color: theme-color('primary');
 				}
 				@include media-max(md) {
-					padding-left: 0;
+					//padding-left: 0;
+				}
+				@include media-max(sm) {
+					padding: 0 1rem;
 				}
 			}		
 		}
 		@include media-max(md) {
 			justify-content: flex-start;
+			margin-left: -1.2rem;
 		}
 	}
 }
