@@ -182,6 +182,8 @@ $(document).ready(function(){
 
     init_slider();
 
+    $('.zoom').magnify();
+
 });
 
 function init_slider() {
